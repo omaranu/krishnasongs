@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KṛṣṇaSongs — ISKCON Kirtan Display</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+SC:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ═══ PARTICLE CANVAS ═══ -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ═══ BACKGROUND ═══ -->
+  <div id="bg-layer-a" class="bg-layer"></div>
+  <div id="bg-layer-b" class="bg-layer"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HOME SCREEN
+  ════════════════════════════════════════════ -->
+  <div id="home-screen" class="screen active">
+    <div class="home-inner">
+      <div class="home-brand">
+        <div class="om-symbol">ॐ</div>
+        <h1 class="app-title">Kṛṣṇa<span class="title-accent">Songs</span></h1>
+        <p class="app-subtitle">Śrī Kṛṣṇa Caitanya — ISKCON Kirtan Display</p>
+      </div>
+
+      <div class="home-selector">
+        <label class="selector-label" for="kirtan-select">Select a Kirtan</label>
+        <div class="select-wrapper">
+          <select id="kirtan-select">
+            <option value="">— Choose a Kirtan —</option>
+          </select>
+          <div class="select-arrow">▾</div>
+        </div>
+
+        <div id="kirtan-meta" class="kirtan-meta hidden">
+          <span id="meta-composer" class="meta-composer"></span>
+          <span class="meta-divider">·</span>
+          <span id="meta-source" class="meta-source"></span>
+        </div>
+
+        <button id="begin-btn" class="begin-btn" disabled>
+          <span class="begin-lotus">❀</span>
+          Begin Kirtan
+        </button>
+      </div>
+
+      <div class="home-footer">
+        <p>Hare Kṛṣṇa · For use during Bhagavad Gītā classes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       DISPLAY SCREEN
+  ════════════════════════════════════════════ -->
+  <div id="display-screen" class="screen">
+
+    <!-- Lyric scroll area -->
+    <div id="scroll-container">
+      <div id="lyric-content"></div>
+      <div id="scroll-padding"></div>
+    </div>
+
+    <!-- Control bar -->
+    <div id="control-bar" class="visible">
+
+      <button id="btn-home" class="ctrl-btn ctrl-btn--icon" title="Back to Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12L12 3l9 9"/><path d="M9 21V12h6v9"/></svg>
+      </button>
+
+      <button id="btn-top" class="ctrl-btn ctrl-btn--icon" title="Back to Top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 11l7-7 7 7"/><path d="M5 19l7-7 7 7"/></svg>
+      </button>
+
+      <button id="btn-play" class="ctrl-btn ctrl-btn--play" title="Play / Pause">
+        <svg id="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="icon-pause" viewBox="0 0 24 24" fill="currentColor" class="hidden"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+
+      <div class="speed-group">
+        <button class="speed-btn" data-speed="slow">Slow</button>
+        <button class="speed-btn active" data-speed="default">Default</button>
+        <button class="speed-btn" data-speed="fast">Fast</button>
+      </div>
+
+      <button id="btn-settings" class="ctrl-btn ctrl-btn--icon" title="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+    </div>
+
+    <!-- Settings panel -->
+    <div id="settings-panel" class="settings-panel hidden">
+      <h3 class="settings-title">Settings</h3>
+      <div class="setting-row">
+        <label class="setting-label">Gold Particle Effects</label>
+        <button id="toggle-particles" class="toggle-btn active" data-state="on">On</button>
+      </div>
+      <div class="setting-row">
+        <label class="setting-label">Background Transitions</label>
+        <button id="toggle-bg" class="toggle-btn active" data-state="on">On</button>
+      </div>
+      <div class="settings-divider"></div>
+      <p class="settings-hint">Hare Kṛṣṇa 🙏</p>
+    </div>
+
+    <!-- Scroll resume toast -->
+    <div id="resume-toast" class="resume-toast hidden">
+      <span>Auto-scroll paused</span>
+      <button id="btn-resume">Resume</button>
+    </div>
+
+    <!-- Kirtan title overlay -->
+    <div id="kirtan-title-overlay" class="kirtan-title-overlay"></div>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
