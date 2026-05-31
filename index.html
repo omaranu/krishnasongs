@@ -24,9 +24,18 @@
   <div id="home-screen" class="screen active">
     <div class="home-inner">
       <div class="home-brand">
-        <div class="om-symbol">ॐ</div>
+        <svg class="lotus-symbol" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor"/>
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor" transform="rotate(45 32 32)"/>
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor" transform="rotate(90 32 32)"/>
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor" transform="rotate(135 32 32)"/>
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor" transform="rotate(180 32 32)"/>
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor" transform="rotate(225 32 32)"/>
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor" transform="rotate(270 32 32)"/>
+          <path d="M32 32 C27 25 27 14 32 8 C37 14 37 25 32 32Z" fill="currentColor" transform="rotate(315 32 32)"/>
+          <circle cx="32" cy="32" r="5.5" fill="currentColor"/>
+        </svg>
         <h1 class="app-title">Kṛṣṇa<span class="title-accent">Songs</span></h1>
-        <p class="app-subtitle">Śrī Kṛṣṇa Caitanya — ISKCON Kirtan Display</p>
       </div>
 
       <div class="home-selector">
@@ -40,8 +49,6 @@
 
         <div id="kirtan-meta" class="kirtan-meta hidden">
           <span id="meta-composer" class="meta-composer"></span>
-          <span class="meta-divider">·</span>
-          <span id="meta-source" class="meta-source"></span>
         </div>
 
         <button id="begin-btn" class="begin-btn" disabled>
@@ -50,9 +57,6 @@
         </button>
       </div>
 
-      <div class="home-footer">
-        <p>Hare Kṛṣṇa · For use during Bhagavad Gītā classes</p>
-      </div>
     </div>
   </div>
 
@@ -78,9 +82,17 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 11l7-7 7 7"/><path d="M5 19l7-7 7 7"/></svg>
       </button>
 
+      <button id="btn-prev" class="ctrl-btn ctrl-btn--icon" title="Previous Verse (←)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6 10.5 12 19 18V6zM5 6v12h2V6H5z"/></svg>
+      </button>
+
       <button id="btn-play" class="ctrl-btn ctrl-btn--play" title="Play / Pause">
         <svg id="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
         <svg id="icon-pause" viewBox="0 0 24 24" fill="currentColor" class="hidden"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+
+      <button id="btn-next" class="ctrl-btn ctrl-btn--icon" title="Next Verse (→)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 18 13.5 12 5 6v12zm9-12v12h2V6h-2z"/></svg>
       </button>
 
       <div class="speed-group">
@@ -88,6 +100,17 @@
         <button class="speed-btn active" data-speed="default">Default</button>
         <button class="speed-btn" data-speed="fast">Fast</button>
       </div>
+
+      <button id="btn-translation" class="ctrl-btn ctrl-btn--translation" title="Toggle Translation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 5h9M7 3v2"/>
+          <path d="M5 8c1 2.5 3 4 5.5 5"/>
+          <path d="M9.5 8C9 10 7 12 4.5 13"/>
+          <path d="M14.5 14l3-7.5 3 7.5"/>
+          <path d="M15.7 11.5h4.6"/>
+        </svg>
+        <span>Translation</span>
+      </button>
 
       <button id="btn-settings" class="ctrl-btn ctrl-btn--icon" title="Settings">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>

@@ -5,15 +5,134 @@
     "composer": "Traditional",
     "source": "kksongs.org",
     "mode": "continuous",
-    "images": [],
+    "images": [
+      "hare-krishna-maha-mantra_1.png",
+      "hare-krishna-maha-mantra_2.png",
+      "hare-krishna-maha-mantra_3.png",
+      "hare-krishna-maha-mantra_4.png",
+      "jai-prabhupada.jpg",
+      "jai-gurudev.jpg",
+      "nitai-gaura-haribol.jpg"
+    ],
     "content": [
       {
         "type": "continuous",
+        "imageRange": [0, 3],
         "lines": [
           "Hare Kṛṣṇa Hare Kṛṣṇa",
           "Kṛṣṇa Kṛṣṇa Hare Hare",
           "Hare Rāma Hare Rāma",
           "Rāma Rāma Hare Hare"
+        ]
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 4,
+        "lines": ["Jai Prabhupāda!"]
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 5,
+        "lines": ["Jai Gurudev!"]
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 6,
+        "lines": ["Nitāi Gaura Haribol!"]
+      }
+    ]
+  },
+  {
+    "id": "krsna-jinaka-nama-hai",
+    "title": "Kṛṣṇa Jinakā Nāma Hai",
+    "composer": "Traditional",
+    "source": "kksongs.org",
+    "mode": "verse",
+    "images": [
+      "krsna-jinaka-nama-hai-1.png",
+       "krsna-jinaka-nama-hai-2.png",
+        "krsna-jinaka-nama-hai-3.png",
+        "krsna-jinaka-nama-hai-4.png",
+        "krsna-jinaka-nama-hai-5.png",
+        "krsna-jinaka-nama-hai-6.png"],
+    "content": [
+      {
+        "type": "verse",
+        "imageIndex": 0,
+        "lines": [
+          "kṛṣṇa jinakā nāma hai, gokula jinakā dhāma hai",
+          "aise śrī bhagavāna ko (mere)",
+          "barāmbāra praṇāma hai"
+        ],
+        "translation": "He whose name is Kṛṣṇa, and whose abode is Gokula — unto such a Supreme Personality of Godhead, I offer my most humble obeisances, again and again."
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 1,
+        "lines": [
+          "yaśodā jinakī maiyā hai, nanda jī bāpaiyā hai",
+          "aise śrī gopāla ko (mere)",
+          "bārambāra praṇāma hai"
+        ],
+        "translation": "He whose mother is Yaśodā, and whose father is Nandajī — unto such a cowherd boy named Gopāla, I offer my most humble obeisances, again and again."
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 2,
+        "lines": [
+          "rādhā jinakī chāyā hai, adbhuta jinakī māyā hai",
+          "aise śrī ghana-śyāma ko (mere)",
+          "bārambāra praṇāma hai"
+        ],
+        "translation": "He whose Beloved is Rādhā, and whose illusory energy is very amazing — unto He whose splendrous complexion is the color of the fresh raincloud, I offer my most humble obeisances, again and again."
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 3,
+        "lines": [
+          "lūṭa lūṭa dadhi mākhana khāyo, gvāla-bāla sańga dhenu carāyo",
+          "aise līlā-dhāma ko (mere)",
+          "bārambāra praṇāma hai"
+        ],
+        "translation": "He who sneaks around to steal yogurt and butter, then hides to eat it, and who tends the cows in the company of His cowherd boyfriends — unto He who is the reservoir of playful pastimes, I offer my most humble obeisances, again and again."
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 4,
+        "lines": [
+          "drupada sutā ki lāja bacāyo, grāha se gaja ko phanda chudāyo",
+          "aise kṛpā-dhāma ko (mere)",
+          "barāmbāra praṇāma hai"
+        ],
+        "translation": "He who prevented the dishonoring of the daughter of King Drupada, and who delivered the elephant Gajendra from the grasp of the alligator — unto He who is the abode of all compassion, I offer my most humble obeisances, again and again."
+      },
+      { "type": "gap" },
+      {
+        "type": "verse",
+        "imageIndex": 5,
+        "lines": [
+          "kuru pāṇḍava me yuddha macāyo, arjuna ko upadeśa sunāyo",
+          "aise śrī bhagavāna ko (mere)",
+          "bārambāra praṇāma hai"
+        ],
+        "translation": "He who caused the great war between the Kurus and the Pāṇḍavas, and who spoke divine instructions to Arjuna on the battlefield — unto He who is the Lord of all helpless fallen souls, I offer my most humble obeisances, again and again."
+      },
+      { "type": "gap" },
+      {
+        "type": "continuous",
+        "lines": [
+          "bhaja re! bhaja govinda gopāla hare",
+          "rādhe govinda, rādhe govinda, rādhe govinda",
+          "rādhe gopāla, rādhe gopāla, rādhe gopāla",
+          "aise śrī bhagavāna ko (mere)",
+          "bārambāra praṇāma hai"
         ]
       }
     ]
