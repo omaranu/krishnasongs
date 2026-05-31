@@ -1,0 +1,25 @@
+{
+  "id": "jaya-radha-madhava",
+  "title": "Jaya Rādhā Mādhava",
+  "composer": "Bhaktivinoda Ṭhākura",
+  "source": "kksongs.org",
+  "mode": "continuous",
+  "images": [],
+  "content": [
+    {
+      "type": "continuous",
+      "lines": [
+        "jaya rādhā-mādhava kuñja-bihārī",
+        "gopī-jana-vallabha giri-vara-dhārī"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "lines": [
+        "yaśodā-nandana braja-jana-rañjana",
+        "yāmuna-tīra-vana-cārī"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "gopala-govinda",
+  "title": "Gopāla Govinda",
+  "composer": "Traditional",
+  "source": "kksongs.org",
+  "mode": "continuous",
+  "images": [],
+  "content": [
+    {
+      "type": "continuous",
+      "lines": [
+        "gopāla govinda rāma madana-mohana",
+        "śyāmasundara mādhava gokula-rañjana"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "lines": [
+        "rādhe govinda, rādhe govinda",
+        "rādhe govinda, govinda govinda"
+      ]
+    }
+  ]
+}

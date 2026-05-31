@@ -1,0 +1,89 @@
+{
+  "id": "gurvastakam",
+  "title": "Śrī Gurv-aṣṭakam",
+  "composer": "Viśvanātha Cakravartī Ṭhākura",
+  "source": "kksongs.org",
+  "mode": "refrain-verse",
+  "images": [],
+  "content": [
+    {
+      "type": "refrain",
+      "lines": [
+        "yasya prasādād bhagavat-prasādo",
+        "yasyāprasādān na gatiḥ kuto 'pi",
+        "dhyāyan stuvaṁs tasya yaśas tri-sandhyaṁ",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "saṁsāra-dāvānala-līḍha-loka-",
+        "trāṇāya kāruṇya-ghanāghanatvam",
+        "prāptasya kalyāṇa-guṇārṇavasya",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "mahāprabhoḥ kīrtana-nṛtya-gīta-",
+        "vāditra-mādyan-manaso rasena",
+        "romāñca-kampāśru-taranga-bhājo",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "śrī-vigraharādhana-nitya-nānā-",
+        "śṛṅgāra-tan-mandira-mārjanādau",
+        "yuktasya bhaktāṁś ca niyuñjato 'pi",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "svādv-anna-tṛptān hari-bhakta-saṅghān",
+        "kṛtvaiava tṛptiṁ bhajataḥ sadaiva",
+        "ānandita-rūpam ataḥ sadaiva",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "śrī-rādhikā-mādhavayor apāra-",
+        "mādhurya-līlā guṇa-rūpa-nāmnām",
+        "prati-kṣaṇāsvādana-lolupasya",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "nikunja-yūno rati-keli-siddhyai",
+        "yā yālibhir yuktir apekṣaṇīyā",
+        "tatrāti-dākṣyād ati-vallabhasya",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "sakṣād-dharitvena samasta-śāstrair",
+        "uktas tathā bhāvyata eva sadbhiḥ",
+        "kintu prabhor yaḥ priya eva tasya",
+        "vande guroḥ śrī-caraṇāravindam"
+      ]
+    }
+  ]
+}

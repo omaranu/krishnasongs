@@ -1,0 +1,49 @@
+{
+  "id": "sri-guru-vandana",
+  "title": "Śrī Guru Vandanā",
+  "composer": "Narottama Dāsa Ṭhākura",
+  "source": "kksongs.org",
+  "mode": "refrain-verse",
+  "images": [],
+  "content": [
+    {
+      "type": "refrain",
+      "lines": [
+        "śrī-guru-caraṇa-padma, kevala-bhakati-sadma,",
+        "bando muñi sāvadhāna mate",
+        "jāhāra prasāde bhāi, e bhava toriyā jāi,",
+        "kṛṣṇa-prāpti hoy jāhā ha'te"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "guru-mukha-padma-vākya, cittete koriyā aikya,",
+        "āra nā koriho mane āśā",
+        "śrī-guru-caraṇe rati, ei se uttama-gati,",
+        "je prasāde pūre sarva āśā"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "cakṣu-dāna dilo jei, janme janme prabhu sei,",
+        "divya-jñāna hṛde prokāśito",
+        "prema-bhakti jāhā hoite, avidyā vināśa jāte,",
+        "vede gāy jāhāra carito"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "śrīguruḥ kṛṣṇa-rūpa, hana śāstre ei rūpa,",
+        "guru-rūpe kṛṣṇa kṛpā kori",
+        "ei rūpe koro tumi, e jīvera durdaśā",
+        "nāśiyā karaha sukha-kari"
+      ]
+    }
+  ]
+}

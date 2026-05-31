@@ -1,0 +1,49 @@
+{
+  "id": "nitai-pada-kamala",
+  "title": "Nitāi-pada-kamala",
+  "composer": "Narottama Dāsa Ṭhākura",
+  "source": "kksongs.org",
+  "mode": "refrain-verse",
+  "images": [],
+  "content": [
+    {
+      "type": "refrain",
+      "lines": [
+        "nitāi-pada-kamala, koṭī-candra-suśītala,",
+        "je chāyāya jagat juḍāy",
+        "heno nitāi bine bhāi, rādhā-kṛṣṇa pāite nāi,",
+        "dṛḍha kori' dharo nitāir pāy"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "se sambandha nāhi jār, bṛthā janma gelo tār,",
+        "sei paśu baḍo durācār",
+        "nitāi nā bolilo mukhe, majilo saṁsāra-sukhe,",
+        "vidyā-kule ki koribe tār"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "ahaṅkāre māttā hoiyā, nitāi-pada pāsariyā,",
+        "asatyere satya kori māni",
+        "nitāiyer koruṇā habe, braje rādhā-kṛṣṇa pābe,",
+        "dharo nitāi-caraṇa du'khāni"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "nitāiyer caraṇa satya, tāṅhāra sevaka nitya,",
+        "nitāi-pada sadā koro āśa",
+        "narottama boro dukhī, nitāi more koro sukhī,",
+        "rākho rāṅgā-caraṇera pāśa"
+      ]
+    }
+  ]
+}

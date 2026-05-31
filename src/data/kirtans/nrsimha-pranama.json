@@ -1,0 +1,38 @@
+{
+  "id": "nrsimha-pranama",
+  "title": "Nṛsiṁha Praṇāma",
+  "composer": "Traditional",
+  "source": "kksongs.org",
+  "mode": "refrain-verse",
+  "images": [],
+  "content": [
+    {
+      "type": "refrain",
+      "lines": [
+        "namas te narasiṁhāya",
+        "prahlādāhlāda-dāyine",
+        "hiraṇyakaśipor vakṣaḥ-",
+        "śilā-ṭaṅka-nakhālaye"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "ito nṛsiṁhaḥ parato nṛsiṁho",
+        "yato yato yāmi tato nṛsiṁhaḥ",
+        "bahir nṛsiṁho hṛdaye nṛsiṁho",
+        "nṛsiṁham ādiṁ śaraṇaṁ prapadye"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "tava kara-kamala-vare nakham adbhuta-śṛṅgaṁ",
+        "dalita-hiraṇyakaśipu-tanu-bhṛṅgam",
+        "keśava dhṛta-narahari-rūpa jaya jagadīśa hare"
+      ]
+    }
+  ]
+}

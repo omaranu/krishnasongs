@@ -1,0 +1,46 @@
+{
+  "id": "hare-krishna-maha-mantra",
+  "title": "Hare Krishna Mahā-mantra",
+  "composer": "Traditional",
+  "source": "kksongs.org",
+  "mode": "continuous",
+  "images": [
+    "hare-krishna-maha-mantra_1.png",
+    "hare-krishna-maha-mantra_2.png",
+    "hare-krishna-maha-mantra_3.png",
+    "hare-krishna-maha-mantra_4.png",
+    "jai-prabhupada-1.png",
+    "jai-gurudev-1.png",
+    "nitai-gaura-hari-bol-1.png"
+  ],
+  "content": [
+    {
+      "type": "continuous",
+      "imageRange": [0, 3],
+      "lines": [
+        "Hare Kṛṣṇa Hare Kṛṣṇa",
+        "Kṛṣṇa Kṛṣṇa Hare Hare",
+        "Hare Rāma Hare Rāma",
+        "Rāma Rāma Hare Hare"
+      ]
+    },
+    {
+      "type": "verse",
+      "fullscreen": true,
+      "imageIndex": 4,
+      "lines": ["Jai Prabhupāda!"]
+    },
+    {
+      "type": "verse",
+      "fullscreen": true,
+      "imageIndex": 5,
+      "lines": ["Jai Gurudev!"]
+    },
+    {
+      "type": "verse",
+      "fullscreen": true,
+      "imageIndex": 6,
+      "lines": ["Nitāi Gaura Haribol!"]
+    }
+  ]
+}

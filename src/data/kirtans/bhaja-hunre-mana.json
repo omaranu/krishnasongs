@@ -1,0 +1,49 @@
+{
+  "id": "bhaja-hunre-mana",
+  "title": "Bhaja Hure Mana",
+  "composer": "Narottama Dāsa Ṭhākura",
+  "source": "kksongs.org",
+  "mode": "refrain-verse",
+  "images": [],
+  "content": [
+    {
+      "type": "refrain",
+      "lines": [
+        "bhaja hure mana, śrī nanda-nandana",
+        "abhaya-caraṇāravinda re",
+        "durlabha mānava-janama sat-sange",
+        "taroho e bhava-sindhu re"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "śīta ātapa, bāta bariṣaṇa",
+        "e dina jāminī jāgi re",
+        "biphale sevinu kṛpaṇa durajana",
+        "capala sukha-laba lāgi' re"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "e dhana, yauvaṇa, putra, parijana",
+        "ithe ki āche paratīti re",
+        "kamala-dala-jala, jīvana ṭalamala",
+        "bhajahu hari-pada nīti re"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "śravaṇa, kīrtana, smaraṇa, vandana",
+        "pāda-sevana, dāsya re",
+        "pūjana, sakhī-jana, ātma-nivedana",
+        "narottama-dāsera āśā re"
+      ]
+    }
+  ]
+}
