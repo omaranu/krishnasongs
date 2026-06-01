@@ -6,7 +6,40 @@ import {
   toggleParticles, toggleBg,
   resumeToast, btnResume, canvas,
   scrollContainer, speedBtns,
+  btnFontDecrease, btnFontIncrease,
+  lyricContent,
 } from './dom.js';
+
+const FONT_MIN   = 0.75;
+const FONT_MAX   = 1.5;
+const FONT_STEP  = 0.125;
+const LS_KEY     = 'ks-font-scale';
+
+function applyFontScale(scale) {
+  state.fontScale = scale;
+  lyricContent.style.setProperty('--lyric-scale', scale);
+  btnFontDecrease.disabled = scale <= FONT_MIN;
+  btnFontIncrease.disabled = scale >= FONT_MAX;
+  btnFontDecrease.classList.toggle('active', scale < 1);
+  btnFontIncrease.classList.toggle('active', scale > 1);
+  localStorage.setItem(LS_KEY, scale);
+}
+
+export function initFontScale() {
+  const saved = parseFloat(localStorage.getItem(LS_KEY)) || 1;
+  const clamped = Math.min(FONT_MAX, Math.max(FONT_MIN, saved));
+  applyFontScale(clamped);
+
+  btnFontDecrease.addEventListener('click', () => {
+    const next = Math.max(FONT_MIN, parseFloat((state.fontScale - FONT_STEP).toFixed(3)));
+    applyFontScale(next);
+  });
+
+  btnFontIncrease.addEventListener('click', () => {
+    const next = Math.min(FONT_MAX, parseFloat((state.fontScale + FONT_STEP).toFixed(3)));
+    applyFontScale(next);
+  });
+}
 import { startScroll, stopScroll, jumpToVerse } from './scroll.js';
 import { scheduleBgCycle, clearBgTimer } from './background.js';
 import { renderParticles, getParticleFrameId, setParticleFrameId } from './particles.js';

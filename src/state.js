@@ -14,6 +14,7 @@ export const state = {
   bgActiveLayer: 'a',
   animFrameId: null,
   scrollPos: 0,
+  fontScale: 1,
 };
 
 export const SPEEDS = { slow: 8, default: 14, fast: 22 };

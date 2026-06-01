@@ -27,4 +27,6 @@ export const bgLayerA        = $('bg-layer-a');
 export const bgLayerB        = $('bg-layer-b');
 export const canvas          = $('particle-canvas');
 export const kirtanOverlay   = $('kirtan-title-overlay');
-export const speedBtns       = document.querySelectorAll('.speed-btn');
+export const speedBtns        = document.querySelectorAll('[data-speed]');
+export const btnFontDecrease  = $('btn-font-decrease');
+export const btnFontIncrease  = $('btn-font-increase');

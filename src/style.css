@@ -317,6 +317,7 @@ body::before {
   flex-direction: column;
   gap: 0;
   text-align: center;
+  --lyric-scale: 1;
 }
 
 #scroll-padding {
@@ -339,7 +340,7 @@ body::before {
 }
 
 .lyric-block--fullscreen .lyric-line {
-  font-size: clamp(76px, 10.8vw, 154px);
+  font-size: calc(clamp(76px, 10.8vw, 154px) * var(--lyric-scale, 1));
 }
 
 .lyric-gap {
@@ -348,7 +349,7 @@ body::before {
 
 .lyric-line {
   font-family: var(--font-lyric);
-  font-size: clamp(38px, 5.4vw, 77px);
+  font-size: calc(clamp(38px, 5.4vw, 77px) * var(--lyric-scale, 1));
   font-weight: 500;
   line-height: 1.55;
   color: #FFFDF5;
@@ -455,7 +456,8 @@ body::before {
 }
 
 /* Speed buttons */
-.speed-group {
+.speed-group,
+.font-size-group {
   display: flex;
   gap: 0;
   border: 1px solid var(--control-border);
