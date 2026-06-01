@@ -1,37 +1,99 @@
 {
   "id": "nrsimha-pranama",
-  "title": "Nṛsiṁha Praṇāma",
+  "title": "Narasiṁha Ārtī",
   "composer": "Traditional",
   "source": "kksongs.org",
-  "mode": "refrain-verse",
-  "images": [],
+  "mode": "verse",
+  "images": [
+    "nrsimha-pranama_1.png",
+    "nrsimha-pranama_2.png",
+    "nrsimha-pranama_3.png"
+  ],
   "content": [
     {
-      "type": "refrain",
+      "type": "verse",
+      "imageIndex": 0,
       "lines": [
         "namas te narasiṁhāya",
         "prahlādāhlāda-dāyine",
         "hiraṇyakaśipor vakṣaḥ-",
         "śilā-ṭaṅka-nakhālaye"
-      ]
+      ],
+      "translation": "I offer my obeisances to Lord Narasiṁha, who gives joy to Prahlāda Mahārāja and whose nails are like chisels on the stone-like chest of the demon Hiraṇyakaśipu."
     },
     { "type": "gap" },
     {
       "type": "verse",
+      "imageIndex": 1,
       "lines": [
         "ito nṛsiṁhaḥ parato nṛsiṁho",
         "yato yato yāmi tato nṛsiṁhaḥ",
         "bahir nṛsiṁho hṛdaye nṛsiṁho",
         "nṛsiṁham ādiṁ śaraṇaṁ prapadye"
-      ]
+      ],
+      "translation": "Lord Nṛsiṁha is here and also there. Wherever I go Lord Nṛsiṁha is there. He is in the heart and is outside as well. I surrender to Lord Nṛsiṁha, the origin of all things and the supreme refuge."
     },
     { "type": "gap" },
     {
       "type": "verse",
+      "imageIndex": 2,
       "lines": [
         "tava kara-kamala-vare nakham adbhuta-śṛṅgaṁ",
         "dalita-hiraṇyakaśipu-tanu-bhṛṅgam",
         "keśava dhṛta-narahari-rūpa jaya jagadīśa hare"
+      ],
+      "translation": "O Keśava! O Lord of the universe! O Lord Hari, who have assumed the form of half-man, half-lion! All glories to You! Just as one can easily crush a wasp between one's fingernails, so in the same way the body of the wasp-like demon Hiraṇyakaśipu has been ripped apart by the wonderful pointed nails on Your beautiful lotus hands."
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 2,
+      "lines": [
+        "Jai Lakṣmī Narasiṁha",
+        "Jai Lakṣmī Narasiṁha",
+        "Jai Lakṣmī Narasiṁha",
+        "Jai Lakṣmī Narasiṁha"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 2,
+      "lines": [
+        "Jai Prahlāda Mahārāja",
+        "Jai Prahlāda Mahārāja",
+        "Jai Prahlāda Mahārāja",
+        "Jai Prahlāda Mahārāja"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 2,
+      "lines": [
+        "Jai Jai Prabhupāda",
+        "Prabhupāda... Prabhupāda",
+        "Jai Jai Prabhupāda"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 2,
+      "lines": [
+        "Jai Jai Gurudev",
+        "Gurudev... Gurudev",
+        "Jai Jai Gurudev"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 2,
+      "lines": [
+        "Nitāi Gaura Hari Bol",
+        "Hari Bol... Hari Bol",
+        "Nitāi Gaura Hari Bol"
       ]
     }
   ]
