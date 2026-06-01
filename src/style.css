@@ -102,20 +102,48 @@ body::before {
 ════════════════════════════════════════════ */
 #home-screen {
   flex-direction: column;
+  background-image: url('/assets/images/home-bg.png');
+  background-size: cover;
+  background-position: center top;
+}
+
+/* Inverted arch — long dark bands top & bottom, moderately dimmed center */
+#home-screen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(8,14,32,0.88) 0%,
+      rgba(8,14,32,0.82) 12%,
+      rgba(8,14,32,0.65) 24%,
+      rgba(8,14,32,0.42) 36%,
+      rgba(8,14,32,0.35) 50%,
+      rgba(8,14,32,0.42) 64%,
+      rgba(8,14,32,0.65) 76%,
+      rgba(8,14,32,0.82) 88%,
+      rgba(8,14,32,0.88) 100%
+    );
+  z-index: 0;
+  pointer-events: none;
 }
 
 .home-inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  justify-content: space-between;
   width: 100%;
-  max-width: 680px;
-  padding: 40px 32px;
+  max-width: 720px;
+  height: 100vh;
+  padding: 6vh 32px 8vh;
 }
 
 /* Brand */
 .home-brand { text-align: center; }
+.home-brand .lotus-symbol { display: none; }
 
 .lotus-symbol {
   width: 62px;
@@ -133,12 +161,15 @@ body::before {
 
 .app-title {
   font-family: var(--font-display);
-  font-size: clamp(48px, 7vw, 80px);
+  font-size: clamp(58px, 8.5vw, 96px);
   font-weight: 300;
   letter-spacing: 0.06em;
   color: var(--cream);
   line-height: 1;
-  text-shadow: 0 2px 30px rgba(212,168,67,0.3);
+  text-shadow:
+    0 2px 30px rgba(212,168,67,0.5),
+    0 0 60px rgba(212,168,67,0.2),
+    0 2px 12px rgba(0,0,0,0.9);
 }
 
 .title-accent {
@@ -160,15 +191,17 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .selector-label {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 28px;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-light);
+  text-shadow: 0 0 24px rgba(212,168,67,0.7), 0 1px 12px rgba(0,0,0,0.95);
 }
 
 .select-wrapper {
@@ -178,13 +211,13 @@ body::before {
 
 #kirtan-select {
   width: 100%;
-  padding: 16px 48px 16px 24px;
+  padding: 20px 56px 20px 28px;
   background: rgba(13,27,62,0.6);
   border: 1px solid var(--control-border);
   border-radius: 4px;
   color: var(--text-primary);
   font-family: var(--font-lyric);
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 400;
   appearance: none;
   cursor: pointer;
@@ -205,11 +238,11 @@ body::before {
 
 .select-arrow {
   position: absolute;
-  right: 18px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--gold);
-  font-size: 20px;
+  font-size: 26px;
   pointer-events: none;
 }
 
@@ -230,36 +263,37 @@ body::before {
 /* Begin button */
 .begin-btn {
   margin-top: 8px;
-  padding: 18px 56px;
-  background: linear-gradient(135deg, rgba(212,168,67,0.15) 0%, rgba(212,168,67,0.08) 100%);
-  border: 1px solid var(--gold);
+  padding: 18px 48px;
+  background: linear-gradient(135deg, #E8B84B 0%, #F0C96E 50%, #D4A843 100%);
+  border: none;
   border-radius: 4px;
-  color: var(--gold-light);
+  color: var(--blue-deep);
   font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 700;
   letter-spacing: 0.12em;
   cursor: pointer;
   transition: all 0.35s var(--ease-sacred);
   display: flex;
   align-items: center;
   gap: 12px;
+  box-shadow: 0 0 40px rgba(212,168,67,0.6), 0 4px 24px rgba(0,0,0,0.5);
+  text-shadow: none;
 }
 
 .begin-btn:not(:disabled):hover {
-  background: linear-gradient(135deg, rgba(212,168,67,0.3) 0%, rgba(212,168,67,0.15) 100%);
-  box-shadow: 0 0 30px rgba(212,168,67,0.25), 0 0 60px rgba(212,168,67,0.1);
+  background: linear-gradient(135deg, #F0C96E 0%, #FFD97A 50%, #E8B84B 100%);
+  box-shadow: 0 0 60px rgba(212,168,67,0.8), 0 6px 28px rgba(0,0,0,0.5);
   transform: translateY(-2px);
 }
 
 .begin-btn:disabled {
-  opacity: 0.35;
+  opacity: 0.55;
   cursor: not-allowed;
-  border-color: var(--gold-dim);
 }
 
 .begin-lotus {
-  font-size: 18px;
+  font-size: 26px;
   animation: lotus-spin 8s linear infinite;
 }
 @keyframes lotus-spin {

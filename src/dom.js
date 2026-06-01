@@ -30,3 +30,6 @@ export const kirtanOverlay   = $('kirtan-title-overlay');
 export const speedBtns        = document.querySelectorAll('[data-speed]');
 export const btnFontDecrease  = $('btn-font-decrease');
 export const btnFontIncrease  = $('btn-font-increase');
+export const btnFullscreen    = $('btn-fullscreen');
+export const iconExpand       = $('icon-expand');
+export const iconCompress     = $('icon-compress');

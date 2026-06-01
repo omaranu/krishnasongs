@@ -8,6 +8,7 @@ import {
   scrollContainer, speedBtns,
   btnFontDecrease, btnFontIncrease,
   lyricContent,
+  btnFullscreen, iconExpand, iconCompress,
 } from './dom.js';
 
 const FONT_MIN   = 0.75;
@@ -56,6 +57,24 @@ export function resetHideTimer() {
       controlBar.classList.remove('visible');
     }
   }, 3500);
+}
+
+function updateFullscreenIcon() {
+  const isFs = !!document.fullscreenElement;
+  iconExpand.classList.toggle('hidden', isFs);
+  iconCompress.classList.toggle('hidden', !isFs);
+}
+
+export function initFullscreen() {
+  btnFullscreen.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  });
+
+  document.addEventListener('fullscreenchange', updateFullscreenIcon);
 }
 
 export function initControlBarHide() {
@@ -161,7 +180,11 @@ export function initControls(onExit) {
         resumeToast.classList.add('hidden');
         break;
       case 'Escape':
-        onExit();
+        if (!document.fullscreenElement) onExit();
+        break;
+      case 'KeyF':
+        if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+        else document.exitFullscreen();
         break;
       case 'ArrowLeft':
         e.preventDefault();
