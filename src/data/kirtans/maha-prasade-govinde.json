@@ -4,10 +4,11 @@
   "composer": "Bhaktivinoda Ṭhākura",
   "source": "kksongs.org",
   "mode": "refrain-verse",
-  "images": [],
+  "images": ["maha-prasade-govinde-1.png"],
   "content": [
     {
       "type": "verse",
+      "imageIndex": 0,
       "lines": [
         "maha-prasade govinde",
         "nama-brahmani vaisnave",
@@ -19,6 +20,7 @@
     { "type": "gap" },
     {
       "type": "verse",
+      "imageIndex": 0,
       "lines": [
         "sarira avidya-jal, jodendriya tahe kal,",
         "jive phele visaya-sagore",
@@ -30,6 +32,7 @@
     { "type": "gap" },
     {
       "type": "verse",
+      "imageIndex": 0,
       "lines": [
         "krishna baro doyamoy, koribare jihva jay,",
         "sva-prasad-anna dilo bhai",
