@@ -38,9 +38,11 @@
       "type": "verse",
       "imageIndex": 2,
       "lines": [
-        "tava kara-kamala-vare nakham adbhuta-śṛṅgaṁ",
+        "tava kara-kamala-vare nakham",
+        "adbhuta-śṛṅgaṁ",
         "dalita-hiraṇyakaśipu-tanu-bhṛṅgam",
-        "keśava dhṛta-narahari-rūpa jaya jagadīśa hare"
+        "keśava dhṛta-narahari-rūpa",
+        "jaya jagadīśa hare"
       ],
       "translation": "O Keśava! O Lord of the universe! O Lord Hari, who have assumed the form of half-man, half-lion! All glories to You! Just as one can easily crush a wasp between one's fingernails, so in the same way the body of the wasp-like demon Hiraṇyakaśipu has been ripped apart by the wonderful pointed nails on Your beautiful lotus hands."
     },
@@ -49,10 +51,10 @@
       "type": "continuous",
       "imageIndex": 2,
       "lines": [
-        "Jai Lakṣmī Narasiṁha",
-        "Jai Lakṣmī Narasiṁha",
-        "Jai Lakṣmī Narasiṁha",
-        "Jai Lakṣmī Narasiṁha"
+        "jai lakṣmī narasiṁha",
+        "jai lakṣmī narasiṁha",
+        "jai lakṣmī narasiṁha",
+        "jai lakṣmī narasiṁha"
       ]
     },
     { "type": "gap" },
@@ -60,10 +62,10 @@
       "type": "continuous",
       "imageIndex": 2,
       "lines": [
-        "Jai Prahlāda Mahārāja",
-        "Jai Prahlāda Mahārāja",
-        "Jai Prahlāda Mahārāja",
-        "Jai Prahlāda Mahārāja"
+        "jai prahlāda mahārāja",
+        "jai prahlāda mahārāja",
+        "jai prahlāda mahārāja",
+        "jai prahlāda mahārāja"
       ]
     },
     { "type": "gap" },
@@ -71,9 +73,9 @@
       "type": "continuous",
       "imageIndex": 2,
       "lines": [
-        "Jai Jai Prabhupāda",
-        "Prabhupāda... Prabhupāda",
-        "Jai Jai Prabhupāda"
+        "jai jai prabhupāda",
+        "prabhupāda... prabhupāda",
+        "jai jai prabhupāda"
       ]
     },
     { "type": "gap" },
@@ -81,9 +83,9 @@
       "type": "continuous",
       "imageIndex": 2,
       "lines": [
-        "Jai Jai Gurudev",
-        "Gurudev... Gurudev",
-        "Jai Jai Gurudev"
+        "jai jai gurudev",
+        "gurudev... gurudev",
+        "jai jai gurudev"
       ]
     },
     { "type": "gap" },
@@ -91,9 +93,9 @@
       "type": "continuous",
       "imageIndex": 2,
       "lines": [
-        "Nitāi Gaura Hari Bol",
-        "Hari Bol... Hari Bol",
-        "Nitāi Gaura Hari Bol"
+        "nitāi gaura hari bol",
+        "hari bol... hari bol",
+        "nitāi gaura hari bol"
       ]
     }
   ]
