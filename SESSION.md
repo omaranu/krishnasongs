@@ -1,5 +1,5 @@
 # KrishnaSongs — Session State
-_Last saved: 2026-05-31_
+_Last saved: 2026-06-01_
 
 ---
 
@@ -10,7 +10,7 @@ Paste the contents of this file at the start of a new Claude session, or say:
 ---
 
 ## Project in one line
-Full-screen TV teleprompter web app for ISKCON kirtan lyrics used during Bhagavad Gītā classes. Vite + vanilla JS, no framework, no backend. Deployed on Netlify. Repo: github.com/omaranu/krishnasongs.
+Full-screen TV teleprompter web app for ISKCON kirtan lyrics used during Bhagavad Gītā classes. Vite + vanilla JS, no framework, no backend. Deployed on **krishnasongs.com** (Cloudflare Workers + Wrangler). Repo: github.com/omaranu/krishnasongs.
 
 ## Key files
 | File | Purpose |
@@ -23,87 +23,94 @@ Full-screen TV teleprompter web app for ISKCON kirtan lyrics used during Bhagava
 | `src/background.js` | setupBackground, crossfadeBg, scheduleBgCycle, switchToImage, clearBgTimer |
 | `src/particles.js` | initParticles, renderParticles |
 | `src/observer.js` | setupVerseImageObserver, teardownVerseImageObserver, stopRangeCycle |
-| `src/controls.js` | initControls(onExit), initControlBarHide, showControlBar, resetHideTimer |
+| `src/controls.js` | initControls(onExit), initControlBarHide, initFontScale, initFullscreen, showControlBar, resetHideTimer |
 | `src/display.js` | enterDisplayMode, exitDisplayMode |
-| `src/home.js` | initHome |
+| `src/home.js` | initHome — uses import.meta.glob for lazy kirtan loading |
 | `src/style.css` | Sacred luxury theme — deep blue/purple + gold |
-| `src/data/kirtans.json` | 11 kirtans with lyrics, translations, image pairings |
+| `src/data/kirtans.json` | Manifest only — 12 kirtans, id/title/composer |
+| `src/data/kirtans/<id>.json` | Full kirtan data, one file per bhajan |
 | `index.html` | Two screens: home (selector) + display (teleprompter) |
 | `public/assets/images/<kirtan-id>/` | Per-kirtan background images |
+| `public/assets/images/home-bg.png` | Home screen kirtan celebration background |
+| `wrangler.toml` | Cloudflare Workers static asset config |
 
 ---
 
-## What was built (Phase 2 — this session)
+## Current state (commit e408d25)
+- ✅ Deployed live at **krishnasongs.com** (Cloudflare Workers, auto-deploys on git push)
+- ✅ 10 ES modules — clean modular architecture
+- ✅ 12 kirtans, per-bhajan JSON files, manifest-based lazy loading
+- ✅ Home screen redesign — kirtan celebration bg image, title at top, controls at bottom, inverted arch gradient veil
+- ✅ Fullscreen button in control bar + F key shortcut; Esc exits fullscreen before exiting display mode
+- ✅ Font size A−/A+ controls (0.75×–1.5×, persisted in localStorage)
+- ✅ Hare Krishna Maha-mantra — fullscreen closing screens (Jai Prabhupāda / Jai Gurudev / Nitāi Gaura Haribol) with 2× font and dedicated images
+- ⚠️ Fast scroll speed bumped to 25 px/s (was 22) — **NOT YET COMMITTED** (src/state.js modified)
 
-### Features
-- **Translation toggle** in control bar — per-verse translation text shown below each verse block; button hidden when kirtan has no translations
-- **Next/Previous verse buttons** (⏮/⏭) flanking play button + `←`/`→` keyboard shortcuts
-- **Verse-image pairing** via IntersectionObserver — `imageIndex` for single images, `imageRange: [start, end]` for cycling (maha-mantra cycles 4 images, then shows dedicated images for ending verses)
-- **Lotus SVG** replaces ॐ on home screen
-- **Home screen cleanup** — removed subtitle, source field, footer; larger label + composer fonts
-- **Permanent bottom gradient veil** — decoupled from control bar so it always shows, masking particle origin
-- **Auto comma-split** in `renderLyrics` — lines break at `, ` automatically across all kirtans
-- **Lyric text glow** — near-white colour, weight 500, three-layer warm gold text-shadow
-
-### Kirtan content added
-- **Kṛṣṇa Jinakā Nāma Hai** — 6 verses, full English translations, 6 image slots (images already in folder)
-- **Maha-mantra ending verses** — Jai Prabhupāda!, Jai Gurudev!, Nitāi Gaura Haribol! with dedicated image slots (need images: `jai-prabhupada.jpg`, `jai-gurudev.jpg`, `nitai-gaura-haribol.jpg` in `public/assets/images/hare-krishna-maha-mantra/`)
-
-### Code quality fixes (from external review)
-- `canvas.getContext('2d')` cached once; particle rAF loop exits cleanly when disabled
-- `window.innerWidth/H` cached; `resizeCanvas` uses `setTransform` (no cumulative scale drift)
-- DPR re-read on every resize (correct on multi-monitor)
-- `kirtans.json` bundled via ES import — works fully offline, no fetch error risk
-- `bgCurrentIndex` wraps with modulo; sentinel `-1` prevents first-render guard misfire
-- Image `onerror` falls back to gradient cycle
-- `lastBestEl` guard removed from IntersectionObserver (was suppressing valid re-triggers)
-- `jumpToVerse` uses `getBoundingClientRect` (layout-stable)
-- `renderKirtanOverlay` uses `textContent` (XSS safe)
-- `will-change: transform` on canvas; `:focus-visible` gold outline added
+## Uncommitted changes
+- `src/state.js` — SPEEDS.fast changed from 22 → 25 (15% faster). Commit when ready.
 
 ---
 
-## Current state
-- ✅ All changes committed and pushed to `main` (commit `0aead3d`)
-- ✅ Local `dist/` built and dev server running on `http://localhost:5173`
-- ⏳ 3 images still needed for maha-mantra ending verses (see above)
-- ⏳ Images for `krsna-jinaka-nama-hai` are in folder but the `imageIndex` fields are wired — ready to go
+## Dropdown order (13 kirtans)
+1. Hare Krishna Mahā-mantra
+2. ✅ Maṅgalācaraṇa
+3. Kṛṣṇa Jinakā Nāma Hai
+4. Mahā-prasāde Govinde
+5. Jaya Rādhā Mādhava
+6. Śrī Guru Vandanā
+7. Govinda Jaya Jaya
+8. Śrī Kṛṣṇa Caitanya
+9. Nṛsiṁha Praṇāma
+10. Bhaja Hure Mana
+11. Nitāi-pada-kamala
+12. Gopāla Govinda
+13. Śrī Gurv-aṣṭakam
 
 ---
 
 ## Next steps (prioritised)
-
-### 1. ✅ Module split — DONE
-730-line monolith split into 10 ES modules. Build passes, dev server confirmed working.
-
-### 2. Add more kirtans
-Each kirtan needs: `id`, `title`, `composer`, `content[]` blocks (type: verse/refrain/continuous/gap), optional `translation` per block, optional `imageIndex`/`imageRange`, optional `images[]` filenames.
-
-### 3. Schema validation
-Add a dev-time validator that warns when `imageIndex` is out of range or `imageRange` exceeds `images.length`. Review report has the exact code snippet.
-
-### 4. Remaining review items deferred
-- `mode` field in JSON is declared but never used — either drive rendering from it or remove
-- `source` field present on all kirtans but unused — remove or display as attribution
-- Per-frame `ctx.createRadialGradient` for 160 particles — GC pressure; could pre-bake sprites
+1. ✅ **Maṅgalācaraṇa added** — `src/data/kirtans/mangalacharan.json`, 10 blocks (8 verses + 2 continuous), translations on all verse blocks, no images yet
+2. **Unit tests (Vitest)** — discussed but not started. Most valuable: scroll math, speed mapping, imageIndex validation, font scale clamping
+3. **Schema validator** — dev-time warning when imageIndex out of range
+4. **Images for remaining kirtans** — several still have `images: []`
+5. **Remaining review items** — `mode` field unused; `source` field unused
 
 ---
 
-## Key data schema (quick reference)
+## Commit rule
+**NO commits without explicit user sign-off.** User must say "commit" or "commit please" before any git commit is made.
+
+---
+
+## Deployment
+```
+git push → Cloudflare builds (npm run build) → krishnasongs.com live (~30s)
+```
+
+## Dev server
+```bash
+cd /Users/anukrati/Documents/Krishna/krishnasongs
+npm run dev       # http://localhost:5173
+npm run build     # production build → dist/
+```
+
+## Key data schema
 ```json
 {
   "id": "kebab-case",
   "title": "Display title with diacriticals",
   "composer": "Composer name",
-  "images": ["file1.jpg", "file2.jpg"],
+  "images": ["file1.jpg"],
   "content": [
-    { "type": "verse", "imageIndex": 0, "lines": ["line 1", "line 2"], "translation": "..." },
+    { "type": "verse", "imageIndex": 0, "lines": ["line 1"], "translation": "..." },
+    { "type": "verse", "fullscreen": true, "imageIndex": 1, "lines": ["Jai Prabhupāda!"] },
     { "type": "gap" },
     { "type": "continuous", "imageRange": [0, 3], "lines": ["..."] }
   ]
 }
 ```
 Block types: `verse`, `refrain`, `continuous`, `gap`
+Special flags: `fullscreen: true` → 100vh block, 2× font, vertically centred
 
 ## Keyboard shortcuts (display mode)
 | Key | Action |
@@ -112,13 +119,5 @@ Block types: `verse`, `refrain`, `continuous`, `gap`
 | `←` / `→` | Prev / Next verse |
 | `↑` / `↓` | Scroll 80px |
 | `Home` | Back to top |
-| `Esc` | Back to home screen |
-
----
-
-## How to start dev server
-```bash
-cd /Users/anukrati/Documents/Krishna/krishnasongs
-npm run dev       # http://localhost:5173
-npm run build     # production build → dist/
-```
+| `F` | Toggle fullscreen |
+| `Esc` | Exit fullscreen (first), then back to home |

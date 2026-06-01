@@ -1,0 +1,140 @@
+{
+  "id": "mangalacharan",
+  "title": "Maṅgalācaraṇa",
+  "composer": "Traditional",
+  "source": "kksongs.org",
+  "mode": "verse",
+  "images": [
+    "mangalacharan_1.png"
+  ],
+  "content": [
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "oṁ ajñāna-timirāndhasya",
+        "jñānāñjana-śalākayā cakṣur unmīlitaṁ yena",
+        "tasmai śrī-gurave namaḥ"
+      ],
+      "translation": "I was born in the darkest ignorance, and my spiritual master opened my eyes with the torch of knowledge. I offer my respectful obeisances unto him."
+    },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "śrī-caitanya-mano-'bhīṣṭaṁ",
+        "sthāpitaṁ yena bhū-tale",
+        "svayaṁ rūpaḥ kadā mahyaṁ",
+        "dadāti sva-padāntikam"
+      ],
+      "translation": "When will Śrīla Rūpa Gosvāmī Prabhupāda, who has established within this material world the mission to fulfill the desire of Lord Caitanya, give me shelter under his lotus feet?"
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "vande 'haṁ śrī-guroḥ",
+        "śrī-yuta-pada-kamalaṁ śrī-gurūn vaiṣṇavāṁś ca",
+        "śrī-rūpaṁ sāgrajātaṁ",
+        "saha-gaṇa-raghunāthānvitaṁ taṁ sa-jīvam",
+        "sādvaitaṁ sāvadhūtaṁ",
+        "parijana-sahitaṁ kṛṣṇa-caitanya-devaṁ",
+        "śrī-rādhā-kṛṣṇa-pādān",
+        "saha-gaṇa-lalitā-śrī-viśākhānvitāṁś ca"
+      ],
+      "translation": "I offer my respectful obeisances unto the lotus feet of my spiritual master and unto the feet of all Vaiṣṇavas. I offer my respectful obeisances unto the lotus feet of Śrīla Rūpa Gosvāmī along with his elder brother Sanātana Gosvāmī, as well as Raghunātha Dāsa and Raghunātha Bhaṭṭa, Gopāla Bhaṭṭa, and Śrīla Jīva Gosvāmī. I offer my respectful obeisances to Lord Kṛṣṇa Caitanya and Lord Nityānanda along with Advaita Ācārya, Gadādhara, Śrīvāsa, and other associates. I offer my respectful obeisances to Śrīmatī Rādhārāṇī and Śrī Kṛṣṇa along with Their associates Śrī Lalitā and Viśākhā."
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "he kṛṣṇa karuṇā-sindho",
+        "dīna-bandho jagat-pate",
+        "gopeśa gopikā-kānta",
+        "rādhā-kānta namo 'stu te"
+      ],
+      "translation": "O my dear Kṛṣṇa, You are the friend of the distressed and the source of creation. You are the master of the gopīs and the lover of Rādhārāṇī. I offer my respectful obeisances unto You."
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "tapta-kāñcana-gaurāṅgi",
+        "rādhe vṛndāvaneśvari",
+        "vṛṣabhānu-sute devi",
+        "praṇamāmi hari-priye"
+      ],
+      "translation": "I offer my respects to Rādhārāṇī, whose bodily complexion is like molten gold and who is the Queen of Vṛndāvana. You are the daughter of King Vṛṣabhānu, and You are very dear to Lord Kṛṣṇa."
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "vāñchā-kalpatarubhyaś ca",
+        "kṛpā-sindhubhya eva ca",
+        "patitānāṁ pāvanebhyo",
+        "vaiṣṇavebhyo namo namaḥ"
+      ],
+      "translation": "I offer my respectful obeisances unto all the Vaiṣṇava devotees of the Lord. They can fulfill the desires of everyone, just like desire trees, and they are full of compassion for the fallen souls."
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "jaya śrī-kṛṣṇa-caitanya",
+        "prabhu-nityānanda",
+        "śrī-advaita gadādhara",
+        "śrīvāsādi-gaura-bhakta-vṛnda"
+      ],
+      "translation": "I offer my obeisances to Śrī Kṛṣṇa Caitanya, Prabhu Nityānanda, Śrī Advaita, Gadādhara, Śrīvāsa and all others in the line of devotion."
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 0,
+      "lines": [
+        "hare kṛṣṇa hare kṛṣṇa",
+        "kṛṣṇa kṛṣṇa hare hare",
+        "hare rāma hare rāma",
+        "rāma rāma hare hare"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "nama oṁ viṣṇu-pādāya kṛṣṇa-preṣṭhāya bhū-tale",
+        "śrīmate bhaktivedānta-svāmin iti nāmine"
+      ],
+      "translation": "I offer my respectful obeisances unto His Divine Grace A. C. Bhaktivedanta Swami Prabhupāda, who is very dear to Lord Kṛṣṇa, having taken shelter at His lotus feet."
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "namas te sārasvate deve",
+        "gaura-vāṇī-pracāriṇe",
+        "nirviśeṣa-śūnyavādi-",
+        "pāścātya-deśa-tāriṇe"
+      ],
+      "translation": "Our respectful obeisances are unto you, O spiritual master, servant of Sarasvatī Gosvāmī. You are kindly preaching the message of Lord Caitanyadeva and delivering the Western countries, which are filled with impersonalism and voidism."
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 0,
+      "lines": [
+        "oṁ namo bhagavate vāsudevāya",
+        "oṁ namo bhagavate vāsudevāya",
+        "oṁ namo bhagavate vāsudevāya"
+      ]
+    }
+  ]
+}

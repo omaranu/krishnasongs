@@ -17,4 +17,4 @@ export const state = {
   fontScale: 1,
 };
 
-export const SPEEDS = { slow: 8, default: 14, fast: 22 };
+export const SPEEDS = { slow: 8, default: 14, fast: 25 };
