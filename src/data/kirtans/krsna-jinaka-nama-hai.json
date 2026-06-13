@@ -10,7 +10,8 @@
     "krsna-jinaka-nama-hai-3.png",
     "krsna-jinaka-nama-hai-4.png",
     "krsna-jinaka-nama-hai-5.png",
-    "krsna-jinaka-nama-hai-6.png"
+    "krsna-jinaka-nama-hai-6.png",
+    "krsna-jinaka-nama-hai-7.png"
   ],
   "content": [
     {
@@ -81,12 +82,49 @@
     { "type": "gap" },
     {
       "type": "continuous",
+      "imageIndex": 6,
       "lines": [
-        "bhaja re! bhaja govinda gopāla hare",
-        "rādhe govinda, rādhe govinda, rādhe govinda",
-        "rādhe gopāla, rādhe gopāla, rādhe gopāla",
-        "aise śrī bhagavāna ko (mere)",
-        "bārambāra praṇāma hai"
+        "bhaja re! bhaja govinda gopāla hare"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 5,
+      "lines": [
+        "rādhe govinda",
+        "rādhe gopāla",
+        "rādhā pārtha-sārathī",
+        "gāndharvikā giridhārī",
+        "rādhā parīśvara",
+        "rādhā kālacandajī",
+        "rukmiṇī dvārakādhīśa",
+        "rādhā madana-mohana",
+        "rādhā baṅkebihārī",
+        "rādhā dāmodara",
+        "rādhā gokulananda",
+        "rādhā gopī-vallabha",
+        "rādhā gopīnātha",
+        "rādhā kuñjabihārī",
+        "rādhā londoneśvara",
+        "rādhā nīla-mādhava",
+        "rādhā rādhanātha",
+        "rādhā ramaṇa",
+        "rādhā rasabihārī",
+        "rādhā śyāmasundara",
+        "rādhā vṛndāvana-candra",
+        "kiśora kiśorī"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 5,
+      "lines": [
+        "bhaja re!",
+        "bhaja govinda gopāla hare",
+        "aise śrī bhagavāna ko mere bārambāra praṇāma hai",
+        "aise śrī ghana-śyāma ko mere bārambāra praṇāma hai"
       ]
     }
   ]
