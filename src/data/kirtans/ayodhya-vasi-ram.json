@@ -16,61 +16,73 @@
   "content": [
     {
       "type": "verse",
+      "fullscreen": true,
       "imageIndex": 0,
       "lines": [
         "ayodhyā vāsī rāma... daśaratha nandana rāma",
         "patita pāvana jānakī jīvana... sītā mohana rāma",
-        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
+        "siyā rāma... siyā rāma",
+        "siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
     {
       "type": "verse",
+      "fullscreen": true,
       "imageIndex": 1,
       "lines": [
         "daśamukha māradana rāma... paśupati rañjana rāma",
         "patita pāvana jānakī jīvana... sītā mohana rāma",
-        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
+        "siyā rāma... siyā rāma",
+        "siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
     {
       "type": "verse",
+      "fullscreen": true,
       "imageIndex": 2,
       "lines": [
         "ānanda rakṣaka rāma... āpad-bandhava rāma",
         "patita pāvana jānakī jīvana... sītā mohana rāma",
-        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
+        "siyā rāma... siyā rāma",
+        "siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
     {
       "type": "verse",
+      "fullscreen": true,
       "imageIndex": 3,
       "lines": [
         "maithilī pati śrī rāma... maruti vandita rāma",
         "patita pāvana jānakī jīvana... sītā mohana rāma",
-        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
+        "siyā rāma... siyā rāma",
+        "siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
     {
       "type": "verse",
+      "fullscreen": true,
       "imageIndex": 4,
       "lines": [
         "pāpa vimocana rāma... parimala bhūṣaṇa rāma",
         "patita pāvana jānakī jīvana... sītā mohana rāma",
-        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
+        "siyā rāma... siyā rāma",
+        "siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
     {
       "type": "verse",
+      "fullscreen": true,
       "imageIndex": 5,
       "lines": [
         "ranajaya lakṣaṇa rāma... rākṣasa śikṣaṇa rāma",
         "patita pāvana jānakī jīvana... sītā mohana rāma",
-        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
+        "siyā rāma... siyā rāma",
+        "siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
