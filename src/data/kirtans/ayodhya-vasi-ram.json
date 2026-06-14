@@ -16,7 +16,6 @@
   "content": [
     {
       "type": "verse",
-      "fullscreen": true,
       "imageIndex": 0,
       "lines": [
         "ayodhyā vāsī rāma... daśaratha nandana rāma",
@@ -26,9 +25,9 @@
       ]
     },
     { "type": "gap" },
+    { "type": "gap" },
     {
       "type": "verse",
-      "fullscreen": true,
       "imageIndex": 1,
       "lines": [
         "daśamukha māradana rāma... paśupati rañjana rāma",
@@ -38,9 +37,9 @@
       ]
     },
     { "type": "gap" },
+    { "type": "gap" },
     {
       "type": "verse",
-      "fullscreen": true,
       "imageIndex": 2,
       "lines": [
         "ānanda rakṣaka rāma... āpad-bandhava rāma",
@@ -50,9 +49,9 @@
       ]
     },
     { "type": "gap" },
+    { "type": "gap" },
     {
       "type": "verse",
-      "fullscreen": true,
       "imageIndex": 3,
       "lines": [
         "maithilī pati śrī rāma... maruti vandita rāma",
@@ -62,9 +61,9 @@
       ]
     },
     { "type": "gap" },
+    { "type": "gap" },
     {
       "type": "verse",
-      "fullscreen": true,
       "imageIndex": 4,
       "lines": [
         "pāpa vimocana rāma... parimala bhūṣaṇa rāma",
@@ -74,9 +73,9 @@
       ]
     },
     { "type": "gap" },
+    { "type": "gap" },
     {
       "type": "verse",
-      "fullscreen": true,
       "imageIndex": 5,
       "lines": [
         "ranajaya lakṣaṇa rāma... rākṣasa śikṣaṇa rāma",
