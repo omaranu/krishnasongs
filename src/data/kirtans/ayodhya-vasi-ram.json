@@ -18,19 +18,9 @@
       "type": "verse",
       "imageIndex": 0,
       "lines": [
-        "ayodhyā vāsī rāma",
-        "daśaratha nandana rāma",
-        "patita pāvana jānakī jīvana",
-        "sītā mohana rāma"
-      ]
-    },
-    { "type": "gap" },
-    {
-      "type": "continuous",
-      "imageIndex": 0,
-      "lines": [
-        "siyā rāma... siyā rāma",
-        "siyā rāma... jai jai rāma"
+        "ayodhyā vāsī rāma... daśaratha nandana rāma",
+        "patita pāvana jānakī jīvana... sītā mohana rāma",
+        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
@@ -38,19 +28,9 @@
       "type": "verse",
       "imageIndex": 1,
       "lines": [
-        "daśamukha māradana rāma",
-        "paśupati rañjana rāma",
-        "patita pāvana jānakī jīvana",
-        "sītā mohana rāma"
-      ]
-    },
-    { "type": "gap" },
-    {
-      "type": "continuous",
-      "imageIndex": 1,
-      "lines": [
-        "siyā rāma... siyā rāma",
-        "siyā rāma... jai jai rāma"
+        "daśamukha māradana rāma... paśupati rañjana rāma",
+        "patita pāvana jānakī jīvana... sītā mohana rāma",
+        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
@@ -58,19 +38,9 @@
       "type": "verse",
       "imageIndex": 2,
       "lines": [
-        "ānanda rakṣaka rāma",
-        "āpad-bandhava rāma",
-        "patita pāvana jānakī jīvana",
-        "sītā mohana rāma"
-      ]
-    },
-    { "type": "gap" },
-    {
-      "type": "continuous",
-      "imageIndex": 2,
-      "lines": [
-        "siyā rāma... siyā rāma",
-        "siyā rāma... jai jai rāma"
+        "ānanda rakṣaka rāma... āpad-bandhava rāma",
+        "patita pāvana jānakī jīvana... sītā mohana rāma",
+        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
@@ -78,19 +48,9 @@
       "type": "verse",
       "imageIndex": 3,
       "lines": [
-        "maithilī pati śrī rāma",
-        "maruti vandita rāma",
-        "patita pāvana jānakī jīvana",
-        "sītā mohana rāma"
-      ]
-    },
-    { "type": "gap" },
-    {
-      "type": "continuous",
-      "imageIndex": 3,
-      "lines": [
-        "siyā rāma... siyā rāma",
-        "siyā rāma... jai jai rāma"
+        "maithilī pati śrī rāma... maruti vandita rāma",
+        "patita pāvana jānakī jīvana... sītā mohana rāma",
+        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
@@ -98,19 +58,9 @@
       "type": "verse",
       "imageIndex": 4,
       "lines": [
-        "pāpa vimocana rāma",
-        "parimala bhūṣaṇa rāma",
-        "patita pāvana jānakī jīvana",
-        "sītā mohana rāma"
-      ]
-    },
-    { "type": "gap" },
-    {
-      "type": "continuous",
-      "imageIndex": 4,
-      "lines": [
-        "siyā rāma... siyā rāma",
-        "siyā rāma... jai jai rāma"
+        "pāpa vimocana rāma... parimala bhūṣaṇa rāma",
+        "patita pāvana jānakī jīvana... sītā mohana rāma",
+        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
@@ -118,19 +68,9 @@
       "type": "verse",
       "imageIndex": 5,
       "lines": [
-        "ranajaya lakṣaṇa rāma",
-        "rākṣasa śikṣaṇa rāma",
-        "patita pāvana jānakī jīvana",
-        "sītā mohana rāma"
-      ]
-    },
-    { "type": "gap" },
-    {
-      "type": "continuous",
-      "imageIndex": 5,
-      "lines": [
-        "siyā rāma... siyā rāma",
-        "siyā rāma... jai jai rāma"
+        "ranajaya lakṣaṇa rāma... rākṣasa śikṣaṇa rāma",
+        "patita pāvana jānakī jīvana... sītā mohana rāma",
+        "siyā rāma... siyā rāma... siyā rāma... jai jai rāma"
       ]
     },
     { "type": "gap" },
