@@ -4,22 +4,31 @@
   "composer": "Bhaktivinoda Ṭhākura",
   "source": "kksongs.org",
   "mode": "continuous",
-  "images": [],
+  "images": [
+    "jaya-radha-madhava-1.png",
+    "jaya-radha-madhava-2.png",
+    "jaya-radha-madhava-3.png",
+    "jaya-radha-madhava-4.png"
+  ],
   "content": [
     {
       "type": "continuous",
+      "imageRange": [0, 3],
       "lines": [
         "jaya rādhā-mādhava kuñja-bihārī",
         "gopī-jana-vallabha giri-vara-dhārī"
-      ]
+      ],
+      "translation": "Kṛṣṇa is the lover of Rādhā. He displays many amorous pastimes in the groves of Vṛndāvana, He is the lover of the cowherd maidens of Vraja, and the holder of the great hill named Govardhana."
     },
     { "type": "gap" },
     {
       "type": "continuous",
+      "imageRange": [0, 3],
       "lines": [
         "yaśodā-nandana braja-jana-rañjana",
         "yāmuna-tīra-vana-cārī"
-      ]
+      ],
+      "translation": "He is the beloved son of mother Yaśodā, the delight of the inhabitants of Vraja, and He wanders in the forests along the banks of the River Yamunā."
     }
   ]
 }

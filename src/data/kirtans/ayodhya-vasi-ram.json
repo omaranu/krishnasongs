@@ -5,7 +5,13 @@
   "source": "",
   "mode": "verse",
   "images": [
-    "ayodhya-vasi-ram_1.png"
+    "ayodhya-vasi-ram_1.jpeg",
+    "ayodhya-vasi-ram_2.jpeg",
+    "ayodhya-vasi-ram_3.jpeg",
+    "ayodhya-vasi-ram_4.jpeg",
+    "ayodhya-vasi-ram_5.jpeg",
+    "ayodhya-vasi-ram_6.jpeg",
+    "ayodhya-vasi-ram_7.jpeg"
   ],
   "content": [
     {
@@ -30,7 +36,7 @@
     { "type": "gap" },
     {
       "type": "verse",
-      "imageIndex": 0,
+      "imageIndex": 1,
       "lines": [
         "daśamukha māradana rāma",
         "paśupati rañjana rāma",
@@ -41,7 +47,7 @@
     { "type": "gap" },
     {
       "type": "continuous",
-      "imageIndex": 0,
+      "imageIndex": 1,
       "lines": [
         "siyā rāma... siyā rāma",
         "siyā rāma... jai jai rāma"
@@ -50,7 +56,7 @@
     { "type": "gap" },
     {
       "type": "verse",
-      "imageIndex": 0,
+      "imageIndex": 2,
       "lines": [
         "ānanda rakṣaka rāma",
         "āpad-bandhava rāma",
@@ -61,7 +67,7 @@
     { "type": "gap" },
     {
       "type": "continuous",
-      "imageIndex": 0,
+      "imageIndex": 2,
       "lines": [
         "siyā rāma... siyā rāma",
         "siyā rāma... jai jai rāma"
@@ -70,7 +76,7 @@
     { "type": "gap" },
     {
       "type": "verse",
-      "imageIndex": 0,
+      "imageIndex": 3,
       "lines": [
         "maithilī pati śrī rāma",
         "maruti vandita rāma",
@@ -81,7 +87,7 @@
     { "type": "gap" },
     {
       "type": "continuous",
-      "imageIndex": 0,
+      "imageIndex": 3,
       "lines": [
         "siyā rāma... siyā rāma",
         "siyā rāma... jai jai rāma"
@@ -90,7 +96,7 @@
     { "type": "gap" },
     {
       "type": "verse",
-      "imageIndex": 0,
+      "imageIndex": 4,
       "lines": [
         "pāpa vimocana rāma",
         "parimala bhūṣaṇa rāma",
@@ -101,7 +107,7 @@
     { "type": "gap" },
     {
       "type": "continuous",
-      "imageIndex": 0,
+      "imageIndex": 4,
       "lines": [
         "siyā rāma... siyā rāma",
         "siyā rāma... jai jai rāma"
@@ -110,7 +116,7 @@
     { "type": "gap" },
     {
       "type": "verse",
-      "imageIndex": 0,
+      "imageIndex": 5,
       "lines": [
         "ranajaya lakṣaṇa rāma",
         "rākṣasa śikṣaṇa rāma",
@@ -121,7 +127,7 @@
     { "type": "gap" },
     {
       "type": "continuous",
-      "imageIndex": 0,
+      "imageIndex": 5,
       "lines": [
         "siyā rāma... siyā rāma",
         "siyā rāma... jai jai rāma"
@@ -130,7 +136,7 @@
     { "type": "gap" },
     {
       "type": "continuous",
-      "imageIndex": 0,
+      "imageIndex": 6,
       "lines": [
         "jai rāma",
         "jai jai rāma jai rāma jānakī rāma",
