@@ -1,0 +1,142 @@
+{
+  "id": "tulasi-arati",
+  "title": "Tulasī Āratī",
+  "composer": "Bhaktivinoda Ṭhākura",
+  "source": "kksongs.org",
+  "mode": "verse",
+  "images": [
+    "tulasi-arati-1.png",
+    "tulasi-arati-2.png",
+    "tulasi-arati-3.png",
+    "tulasi-arati-4.png",
+    "tulasi-arati-5.png",
+    "tulasi-arati-6.png"
+  ],
+  "content": [
+    {
+      "type": "refrain",
+      "imageIndex": 0,
+      "lines": [
+        "namo namaḥ",
+        "tulasī kṛṣṇa-preyasi",
+        "namo namaḥ",
+        "rādhā-kṛṣṇa-sevā pābo ei abilāṣī"
+      ],
+      "translation": "O Tulasī, beloved of Kṛṣṇa, I bow before you again and again. My desire is to obtain the service of Śrī Śrī Rādhā-Kṛṣṇa."
+    },
+    {
+      "type": "refrain",
+      "imageIndex": 0,
+      "lines": [
+        "namo namaḥ",
+        "tulasī kṛṣṇa-preyasi",
+        "namo namaḥ"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 1,
+      "lines": [
+        "ye tomāra śaraṇa loy,",
+        "tara vāñchā pūrṇa hoy",
+        "kṛpā kori' koro",
+        "tāre vṛndāvana-vāsi"
+      ],
+      "translation": "Whoever takes shelter of you has his wishes fulfilled. Bestowing your mercy on him, you make him a resident of Vṛndāvana."
+    },
+    {
+      "type": "refrain",
+      "imageIndex": 1,
+      "lines": [
+        "namo namaḥ",
+        "tulasī kṛṣṇa-preyasi",
+        "namo namaḥ"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 2,
+      "lines": [
+        "mora ei abhilāṣa,",
+        "vilāsa kuñje dio vāsa",
+        "nayana heribo sadā",
+        "yugala-rūpa-rāśi"
+      ],
+      "translation": "My desire is that you will also grant me a residence in the pleasure groves of Śrī Vṛndāvana-dhāma. Thus, within my vision I will always behold the beautiful pastimes of Rādhā and Kṛṣṇa."
+    },
+    {
+      "type": "refrain",
+      "imageIndex": 2,
+      "lines": [
+        "namo namaḥ",
+        "tulasī kṛṣṇa-preyasi",
+        "namo namaḥ"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 3,
+      "lines": [
+        "ei nivedana dhara,",
+        "sakhīra anugata koro",
+        "sevā-adhikāra diye",
+        "koro nīja dāsī"
+      ],
+      "translation": "I beg you to make me a follower of the cowherd damsels of Vraja. Please give me the privilege of devotional service and make me your own maidservant."
+    },
+    {
+      "type": "refrain",
+      "imageIndex": 3,
+      "lines": [
+        "namo namaḥ",
+        "tulasī kṛṣṇa-preyasi",
+        "namo namaḥ"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 4,
+      "lines": [
+        "dīna kṛṣṇa-dāse koy,",
+        "ei yena mora hoy",
+        "śrī-rādhā-govinda-preme",
+        "sadā yena bhāsi"
+      ],
+      "translation": "Dīna Kṛṣṇadāsa prays, "May I always swim in the love of Śrī Rādhā and Govinda.""
+    },
+    {
+      "type": "refrain",
+      "imageIndex": 4,
+      "lines": [
+        "namo namaḥ",
+        "tulasī kṛṣṇa-preyasi",
+        "namo namaḥ"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 5,
+      "lines": [
+        "yāni kāni ca pāpāni",
+        "brahma-hatyādikāni ca",
+        "tāni tāni praṇaśyanti",
+        "pradakṣiṇaḥ pade pade"
+      ],
+      "translation": "By the circumambulation of Śrīmatī Tulasī Devī all the sins that one may have committed are destroyed at every step, even the sin of killing a brāhmaṇa."
+    },
+    {
+      "type": "refrain",
+      "imageIndex": 5,
+      "lines": [
+        "namo namaḥ",
+        "tulasī kṛṣṇa-preyasi",
+        "namo namaḥ"
+      ]
+    }
+  ]
+}
