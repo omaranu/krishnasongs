@@ -1,4 +1,5 @@
 import { state } from './state.js';
+import { Analytics } from './analytics.js';
 import {
   controlBar, displayScreen, settingsPanel,
   btnPlay, btnPrev, btnNext, btnTop, btnHome,
@@ -34,11 +35,13 @@ export function initFontScale() {
   btnFontDecrease.addEventListener('click', () => {
     const next = Math.max(FONT_MIN, parseFloat((state.fontScale - FONT_STEP).toFixed(3)));
     applyFontScale(next);
+    Analytics.fontChanged('decrease');
   });
 
   btnFontIncrease.addEventListener('click', () => {
     const next = Math.min(FONT_MAX, parseFloat((state.fontScale + FONT_STEP).toFixed(3)));
     applyFontScale(next);
+    Analytics.fontChanged('increase');
   });
 }
 import { startScroll, stopScroll, jumpToVerse } from './scroll.js';
@@ -69,8 +72,10 @@ export function initFullscreen() {
   btnFullscreen.addEventListener('click', () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
+      Analytics.fullscreenToggled(true);
     } else {
       document.exitFullscreen();
+      Analytics.fullscreenToggled(false);
     }
   });
 
@@ -91,8 +96,8 @@ export function initControlBarHide() {
 
 export function initControls(onExit) {
   btnPlay.addEventListener('click', () => {
-    if (state.isPlaying) stopScroll();
-    else startScroll();
+    if (state.isPlaying) { stopScroll(); Analytics.scrollPause(); }
+    else { startScroll(); Analytics.scrollPlay(); }
   });
 
   btnTop.addEventListener('click', () => {
@@ -100,15 +105,17 @@ export function initControls(onExit) {
     scrollContainer.scrollTop = 0;
     state.scrollPos = 0;
     resumeToast.classList.add('hidden');
+    Analytics.scrollTop();
   });
 
-  btnHome.addEventListener('click', onExit);
+  btnHome.addEventListener('click', () => { Analytics.exitToHome(); onExit(); });
 
   speedBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       speedBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       state.scrollSpeed = btn.dataset.speed;
+      Analytics.speedChanged(btn.dataset.speed);
       if (state.isPlaying) {
         stopScroll();
         startScroll();
@@ -116,19 +123,22 @@ export function initControls(onExit) {
     });
   });
 
-  btnPrev.addEventListener('click', () => jumpToVerse('prev'));
-  btnNext.addEventListener('click', () => jumpToVerse('next'));
+  btnPrev.addEventListener('click', () => { jumpToVerse('prev'); Analytics.versePrev(); });
+  btnNext.addEventListener('click', () => { jumpToVerse('next'); Analytics.verseNext(); });
 
   btnTranslation.addEventListener('click', () => {
     state.translationsVisible = !state.translationsVisible;
     displayScreen.classList.toggle('translations-visible', state.translationsVisible);
     btnTranslation.classList.toggle('active', state.translationsVisible);
+    Analytics.translationToggled(state.translationsVisible);
     resetHideTimer();
   });
 
   btnSettings.addEventListener('click', (e) => {
     e.stopPropagation();
+    const opening = settingsPanel.classList.contains('hidden');
     settingsPanel.classList.toggle('hidden');
+    Analytics.settingsToggled(opening);
     resetHideTimer();
   });
 
@@ -143,6 +153,7 @@ export function initControls(onExit) {
     toggleParticles.textContent = state.particlesEnabled ? 'On' : 'Off';
     toggleParticles.classList.toggle('active', state.particlesEnabled);
     canvas.style.display = state.particlesEnabled ? 'block' : 'none';
+    Analytics.particlesToggled(state.particlesEnabled);
     if (state.particlesEnabled && !getParticleFrameId()) {
       setParticleFrameId(requestAnimationFrame(renderParticles));
     }
@@ -152,6 +163,7 @@ export function initControls(onExit) {
     state.bgTransitionsEnabled = !state.bgTransitionsEnabled;
     toggleBg.textContent = state.bgTransitionsEnabled ? 'On' : 'Off';
     toggleBg.classList.toggle('active', state.bgTransitionsEnabled);
+    Analytics.bgToggled(state.bgTransitionsEnabled);
     if (state.bgTransitionsEnabled && state.currentKirtan) {
       scheduleBgCycle();
     } else {
@@ -162,6 +174,7 @@ export function initControls(onExit) {
   btnResume.addEventListener('click', () => {
     state.scrollPos = scrollContainer.scrollTop;
     startScroll();
+    Analytics.resumeScroll();
   });
 
   document.addEventListener('keydown', (e) => {
