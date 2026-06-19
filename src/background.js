@@ -17,6 +17,8 @@ export function setupBackground(kirtan) {
   state.bgActiveLayer = 'a';
   state.bgCurrentIndex = -1;
 
+  state.bgInterval = kirtan.bgInterval || 10000;
+
   if (!state.bgTransitionsEnabled) return;
 
   const hasImages = kirtan.images && kirtan.images.length > 0;
@@ -66,7 +68,7 @@ export function scheduleBgCycle() {
   state.bgTimer = setTimeout(() => {
     crossfadeBg();
     scheduleBgCycle();
-  }, 10000);
+  }, state.bgInterval);
 }
 
 export function crossfadeBg() {

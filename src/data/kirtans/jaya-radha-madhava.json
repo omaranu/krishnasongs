@@ -4,6 +4,7 @@
   "composer": "Bhaktivinoda Ṭhākura",
   "source": "kksongs.org",
   "mode": "continuous",
+  "bgInterval": 30000,
   "images": [
     "jaya-radha-madhava-1.png",
     "jaya-radha-madhava-2.png",

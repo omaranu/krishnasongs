@@ -9,6 +9,7 @@ export const state = {
   userScrolled: false,
   hideTimer: null,
   bgTimer: null,
+  bgInterval: 10000,
   bgImages: [],
   bgCurrentIndex: 0,
   bgActiveLayer: 'a',
