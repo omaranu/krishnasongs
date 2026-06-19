@@ -176,15 +176,6 @@ body::before {
   color: var(--gold-light);
 }
 
-.app-subtitle {
-  margin-top: 12px;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  color: var(--text-dim);
-  text-transform: uppercase;
-}
-
 /* Selector */
 .home-selector {
   width: 100%;
@@ -209,9 +200,10 @@ body::before {
   width: 100%;
 }
 
-#kirtan-select {
+/* Custom select display (closed state — identical look to old native select) */
+.kirtan-select-display {
   width: 100%;
-  padding: 20px 56px 20px 28px;
+  padding: 20px 28px;
   background: rgba(13,27,62,0.6);
   border: 1px solid var(--control-border);
   border-radius: 4px;
@@ -219,46 +211,100 @@ body::before {
   font-family: var(--font-lyric);
   font-size: 26px;
   font-weight: 400;
-  appearance: none;
   cursor: pointer;
   transition: border-color 0.3s, background 0.3s;
-  outline: none;
+  display: flex;
+  align-items: center;
+  user-select: none;
 }
 
-#kirtan-select:focus,
-#kirtan-select:hover {
+.kirtan-select-display:hover,
+.kirtan-select-display.open {
   border-color: var(--gold);
   background: rgba(26,45,90,0.7);
 }
 
-#kirtan-select option {
-  background: var(--blue-deep);
+.kirtan-select-text {
+  flex: 1;
+  color: var(--text-dim);
+}
+
+.kirtan-select-text.selected {
   color: var(--text-primary);
 }
 
 .select-arrow {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   color: var(--gold);
   font-size: 26px;
   pointer-events: none;
+  transition: transform 0.3s var(--ease-sacred);
+  display: inline-block;
 }
 
-/* Meta */
-.kirtan-meta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  color: var(--cream-dim);
-  letter-spacing: 0.05em;
-  font-style: italic;
-  transition: opacity 0.4s;
+.kirtan-select-display.open .select-arrow {
+  transform: rotate(180deg);
 }
-.kirtan-meta.hidden { opacity: 0; pointer-events: none; }
-.meta-divider { color: var(--gold-dim); }
+
+/* Dropdown panel */
+.kirtan-dropdown {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: rgba(8, 14, 32, 0.97);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  z-index: 100;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 30px rgba(212,168,67,0.08);
+  overflow: hidden;
+}
+
+.kirtan-dropdown-search {
+  width: 100%;
+  padding: 16px 24px;
+  background: rgba(26,45,90,0.4);
+  border: none;
+  border-bottom: 1px solid var(--control-border);
+  color: var(--text-primary);
+  font-family: var(--font-lyric);
+  font-size: 22px;
+  outline: none;
+}
+
+.kirtan-dropdown-search::placeholder {
+  color: var(--text-dim);
+  opacity: 0.6;
+}
+
+.kirtan-options {
+  max-height: 260px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold-dim) transparent;
+}
+
+.kirtan-option {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  background: transparent;
+  border: none;
+  border-top: 1px solid rgba(212,168,67,0.07);
+  color: var(--text-primary);
+  font-family: var(--font-lyric);
+  font-size: 24px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.kirtan-option:first-child { border-top: none; }
+
+.kirtan-option:hover {
+  background: rgba(212,168,67,0.1);
+  color: var(--gold-light);
+}
 
 /* Begin button */
 .begin-btn {
@@ -296,18 +342,10 @@ body::before {
   font-size: 26px;
   animation: lotus-spin 8s linear infinite;
 }
+
 @keyframes lotus-spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
-}
-
-/* Footer */
-.home-footer {
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  color: var(--text-dim);
-  opacity: 0.6;
-  text-align: center;
 }
 
 /* ═══════════════════════════════════════════════

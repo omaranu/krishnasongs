@@ -2,10 +2,12 @@ const $ = id => document.getElementById(id);
 
 export const homeScreen      = $('home-screen');
 export const displayScreen   = $('display-screen');
-export const kirtanSelect    = $('kirtan-select');
-export const beginBtn        = $('begin-btn');
-export const kirtanMeta      = $('kirtan-meta');
-export const metaComposer    = $('meta-composer');
+export const kirtanSelectBtn  = $('kirtan-select-btn');
+export const kirtanSelectText = $('kirtan-select-text');
+export const kirtanDropdown   = $('kirtan-dropdown');
+export const kirtanSearch     = $('kirtan-search');
+export const kirtanOptions    = $('kirtan-options');
+export const beginBtn         = $('begin-btn');
 export const scrollContainer = $('scroll-container');
 export const lyricContent    = $('lyric-content');
 export const controlBar      = $('control-bar');

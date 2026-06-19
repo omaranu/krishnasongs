@@ -49,16 +49,16 @@
       </div>
 
       <div class="home-selector">
-        <label class="selector-label" for="kirtan-select">Select a Kirtan</label>
+        <label class="selector-label">Select a Kirtan</label>
         <div class="select-wrapper">
-          <select id="kirtan-select">
-            <option value="">— Choose a Kirtan —</option>
-          </select>
-          <div class="select-arrow">▾</div>
-        </div>
-
-        <div id="kirtan-meta" class="kirtan-meta hidden">
-          <span id="meta-composer" class="meta-composer"></span>
+          <div id="kirtan-select-btn" class="kirtan-select-display" role="combobox" tabindex="0" aria-expanded="false">
+            <span id="kirtan-select-text" class="kirtan-select-text">— Choose a Kirtan —</span>
+            <span class="select-arrow">▾</span>
+          </div>
+          <div id="kirtan-dropdown" class="kirtan-dropdown hidden">
+            <input id="kirtan-search" class="kirtan-dropdown-search" type="text" placeholder="Search…" autocomplete="off" spellcheck="false" />
+            <div id="kirtan-options" class="kirtan-options"></div>
+          </div>
         </div>
 
         <button id="begin-btn" class="begin-btn" disabled>
