@@ -48,7 +48,7 @@ function scheduleRangeCycle(start, end) {
     const next = state.bgCurrentIndex >= end ? start : state.bgCurrentIndex + 1;
     switchToImage(next);
     scheduleRangeCycle(start, end);
-  }, 10000);
+  }, state.bgInterval);
 }
 
 export function stopRangeCycle() {
