@@ -96,9 +96,11 @@
       "type": "continuous",
       "imageIndex": 6,
       "lines": [
-        "jai rāma",
-        "jai jai rāma jai rāma jānakī rāma",
-        "siyā rāma siyā rāma siyā rāma jai jai rāma"
+        "jai rāma...jai jai rāma",
+        "jai rāma... jānakī rāma",
+        "",
+        "siyā rāma... siyā rāma",
+        "siyā rāma... jai jai rāma"
       ]
     }
   ]
