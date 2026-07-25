@@ -47,6 +47,7 @@ export function initFontScale() {
 import { startScroll, stopScroll, jumpToVerse } from './scroll.js';
 import { scheduleBgCycle, clearBgTimer } from './background.js';
 import { renderParticles, getParticleFrameId, setParticleFrameId } from './particles.js';
+import { setupVerseImageObserver, stopRangeCycle } from './observer.js';
 
 export function showControlBar() {
   controlBar.classList.add('visible');
@@ -165,9 +166,11 @@ export function initControls(onExit) {
     toggleBg.classList.toggle('active', state.bgTransitionsEnabled);
     Analytics.bgToggled(state.bgTransitionsEnabled);
     if (state.bgTransitionsEnabled && state.currentKirtan) {
-      scheduleBgCycle();
+      if (state.versePairingActive) setupVerseImageObserver();
+      else scheduleBgCycle();
     } else {
       clearBgTimer();
+      stopRangeCycle();
     }
   });
 

@@ -8,8 +8,11 @@ export const FALLBACK_GRADIENTS = [
   'linear-gradient(135deg, #1A0D35 0%, #1A2D5A 60%, #0D2240 100%)',
 ];
 
+let bgLoadToken = 0;
+
 export function setupBackground(kirtan) {
   clearBgTimer();
+  const myToken = ++bgLoadToken;
 
   bgLayerA.style.backgroundImage = FALLBACK_GRADIENTS[0];
   bgLayerA.style.opacity = '1';
@@ -29,6 +32,7 @@ export function setupBackground(kirtan) {
   if (state.bgImages) {
     const first = new Image();
     first.onload = () => {
+      if (myToken !== bgLoadToken) return;
       bgLayerB.style.backgroundImage = `url('${state.bgImages[0]}')`;
       bgLayerB.style.opacity = '1';
       bgLayerA.style.opacity = '0';
@@ -37,6 +41,7 @@ export function setupBackground(kirtan) {
       if (!state.versePairingActive) scheduleBgCycle();
     };
     first.onerror = () => {
+      if (myToken !== bgLoadToken) return;
       state.bgImages = null;
       if (!state.versePairingActive) scheduleBgCycle();
     };
