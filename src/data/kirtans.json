@@ -6,5 +6,6 @@
   { "id": "nrsimha-pranama",            "title": "Narasiṁha Ārtī",                "composer": "Traditional" },
   { "id": "jaya-radha-madhava",         "title": "Jaya Rādhā Mādhava",             "composer": "Bhaktivinoda Ṭhākura" },
   { "id": "ayodhya-vasi-ram",          "title": "Ayodhyā Vāsī Rāma",             "composer": "Traditional" },
-  { "id": "tulasi-arati",              "title": "Tulasī Āratī",                   "composer": "Bhaktivinoda Ṭhākura" }
+  { "id": "tulasi-arati",              "title": "Tulasī Āratī",                   "composer": "Bhaktivinoda Ṭhākura" },
+  { "id": "damodarastakam",            "title": "Śrī Dāmodarāṣṭakam",             "composer": "Satyavrata Muni" }
 ]
