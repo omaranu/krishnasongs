@@ -8,5 +8,6 @@
   { "id": "ayodhya-vasi-ram",          "title": "Ayodhyā Vāsī Rāma",             "composer": "Traditional" },
   { "id": "tulasi-arati",              "title": "Tulasī Āratī",                   "composer": "Bhaktivinoda Ṭhākura" },
   { "id": "damodarastakam",            "title": "Śrī Dāmodarāṣṭakam",             "composer": "Satyavrata Muni" },
-  { "id": "shikshashtaka",             "title": "Śrī Śrī Śikṣāṣṭaka",             "composer": "Śrī Caitanya Mahāprabhu" }
+  { "id": "shikshashtaka",             "title": "Śrī Śrī Śikṣāṣṭaka",             "composer": "Śrī Caitanya Mahāprabhu" },
+  { "id": "jaya-radhe-jaya-krsna-jaya-vrndavana", "title": "Jaya Rādhe Jaya Kṛṣṇa Jaya Vṛndāvana", "composer": "Kṛṣṇa Dāsa" }
 ]
