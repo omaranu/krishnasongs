@@ -1,0 +1,113 @@
+{
+  "id": "jaya-jaya-radhe-jaya-jaya-shyama",
+  "title": "Jaya Jaya Rādhe Jaya Jaya Śyāma",
+  "composer": "Traditional",
+  "source": "kksongs.org; traditional Vraja parikramā kīrtana",
+  "mode": "verse",
+  "images": [
+    "jaya-jaya-radhe-jaya-jaya-shyama_1.png",
+    "jaya-jaya-radhe-jaya-jaya-shyama_2.png",
+    "jaya-jaya-radhe-jaya-jaya-shyama_3.png",
+    "jaya-jaya-radhe-jaya-jaya-shyama_4.png",
+    "jaya-jaya-radhe-jaya-jaya-shyama_5.png",
+    "jaya-jaya-radhe-jaya-jaya-shyama_6.png",
+    "jaya-jaya-radhe-jaya-jaya-shyama_7.png",
+    "jaya-jaya-radhe-jaya-jaya-shyama_8.png"
+  ],
+  "content": [
+    {
+      "type": "verse",
+      "imageIndex": 0,
+      "lines": [
+        "jaya jaya rādhe,",
+        "jaya jaya śyāma",
+        "jaya jaya śrī vṛndāvana dhāma"
+      ],
+      "translation": "Glory, glory to Rādhā! Glory, glory to Śyāma (Kṛṣṇa, the dark-complexioned one)! Glory, glory to Their beautiful, holy abode, Śrī Vṛndāvana!"
+    },
+    { "type": "gap" },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 1,
+      "lines": [
+        "jaya jaya śhyāmā,",
+        "jaya jaya śhyāma",
+        "jaya jaya śrī vṛndāvana dhāma"
+      ],
+      "translation": "Glory, glory to Śyāmā (Rādhā, the radiant one)! Glory, glory to Śyāma (Kṛṣṇa)! Glory, glory to Their beautiful, sacred abode, Śrī Vṛndāvana!"
+    },
+    { "type": "gap" },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 2,
+      "lines": [
+        "pāvana rādhe",
+        "tero nāma",
+        "pāvana śrī vṛndāvana dhāma"
+      ],
+      "translation": "O Rādhā, Your name is pure and holy! Pure and holy is Your beautiful Vṛndāvana Dhāma!"
+    },
+    { "type": "gap" },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 3,
+      "lines": [
+        "jaya jaya gopī",
+        "jaya jaya gvāla",
+        "jaya jaya sadā vihārī lāla"
+      ],
+      "translation": "Glory, glory to the gopīs! Glory, glory to the gopas (cowherd boys)! Glory, glory to the beloved Lāla (Kṛṣṇa), who forever sports and plays in Vraja!"
+    },
+    { "type": "gap" },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 4,
+      "lines": [
+        "govinda govinda",
+        "gāoge",
+        "prema padāratha pāoge"
+      ],
+      "translation": "Sing \"Govinda! Govinda!\" — and you shall attain the treasure of divine love (prema)."
+    },
+    { "type": "gap" },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 5,
+      "lines": [
+        "mānasī-gaṅgā",
+        "śrī harideva",
+        "girivara-dhārī kī parikramā de"
+      ],
+      "translation": "O Mānasī-Gaṅgā, O Śrī Harideva — grant the circumambulation of Girivara-dhārī (Kṛṣṇa, the lifter of Govardhana Hill)!"
+    },
+    { "type": "gap" },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "imageIndex": 6,
+      "lines": [
+        "kunja kunja meiṅ",
+        "caraṇāmṛta le",
+        "apanā jīvana saphala kare"
+      ],
+      "translation": "Take the nectar of His feet (caraṇāmṛta) at every grove of Vṛndāvana, and make your life fulfilled."
+    },
+    { "type": "gap" },
+    { "type": "gap" },
+    {
+      "type": "continuous",
+      "imageIndex": 7,
+      "lines": [
+        "hare krishna hare krishna krishna",
+        "krishna hare hare",
+        "hare rama hare rama",
+        "rama rama hare hare"
+      ]
+    }
+  ]
+}
