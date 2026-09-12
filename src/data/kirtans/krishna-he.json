@@ -1,0 +1,35 @@
+{
+  "id": "krishna-he",
+  "title": "Kṛṣṇa He",
+  "composer": "Traditional",
+  "source": "Caitanya-caritāmṛta, Madhya-līlā 7.95–96 (chanted by Śrī Caitanya Mahāprabhu)",
+  "mode": "verse",
+  "images": ["krishna-he_1.png"],
+  "content": [
+    {
+      "type": "verse",
+      "lines": [
+        "Krishna! Krishna! Krishna! Krishna!",
+        "Krishna! Krishna! Krishna! he",
+        "Krishna! Krishna! Krishna! Krishna!",
+        "Krishna! Krishna! Krishna! he",
+        "Krishna! Krishna! Krishna! Krishna!",
+        "Krishna! Krishna! raksha mam",
+        "Krishna! Krishna! Krishna! Krishna!",
+        "Krishna! Krishna! pahi mam"
+      ],
+      "translation": "O Lord Krishna, please protect Me and maintain Me."
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
+        "Rama! Raghava! Rama! Raghava! Rama!",
+        "Raghava! raksha mam",
+        "Krishna! Kesava! Krishna! Kesava!",
+        "Krishna! Kesava! pahi mam"
+      ],
+      "translation": "O Lord Rama, descendant of King Raghu, please protect Me. O Krishna, O Kesava, killer of the Kesi demon, please maintain Me."
+    }
+  ]
+}
