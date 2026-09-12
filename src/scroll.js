@@ -65,17 +65,17 @@ export function jumpToVerse(dir) {
     el.getBoundingClientRect().top - containerTop + scrollContainer.scrollTop;
 
   const currentScroll = scrollContainer.scrollTop;
-  const threshold = scrollContainer.clientHeight * 0.5;
+  const revealOffset = scrollContainer.clientHeight * 0.12;
   let currentIdx = 0;
   for (let i = 0; i < blocks.length; i++) {
-    if (blockTop(blocks[i]) <= currentScroll + threshold) currentIdx = i;
+    if (blockTop(blocks[i]) - revealOffset <= currentScroll + 1) currentIdx = i;
   }
 
   const targetIdx = dir === 'next'
     ? Math.min(currentIdx + 1, blocks.length - 1)
     : Math.max(currentIdx - 1, 0);
 
-  const targetY = Math.max(0, blockTop(blocks[targetIdx]) - scrollContainer.clientHeight * 0.12);
+  const targetY = Math.max(0, blockTop(blocks[targetIdx]) - revealOffset);
   stopScroll();
   scrollContainer.scrollTop = targetY;
   state.scrollPos = targetY;
