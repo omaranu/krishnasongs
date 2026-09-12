@@ -4,11 +4,13 @@
   { "id": "maha-prasade-govinde",      "title": "Mahā-prasāde Govinde",           "composer": "Bhaktivinoda Ṭhākura" },
   { "id": "krsna-jinaka-nama-hai",      "title": "Kṛṣṇa Jinakā Nāma Hai",         "composer": "Traditional" },
   { "id": "nrsimha-pranama",            "title": "Narasiṁha Ārtī",                "composer": "Traditional" },
+  { "id": "krishna-he",                 "title": "Kṛṣṇa He",                       "composer": "Traditional" },
   { "id": "jaya-radha-madhava",         "title": "Jaya Rādhā Mādhava",             "composer": "Bhaktivinoda Ṭhākura" },
   { "id": "ayodhya-vasi-ram",          "title": "Ayodhyā Vāsī Rāma",             "composer": "Traditional" },
   { "id": "tulasi-arati",              "title": "Tulasī Āratī",                   "composer": "Bhaktivinoda Ṭhākura" },
   { "id": "damodarastakam",            "title": "Śrī Dāmodarāṣṭakam",             "composer": "Satyavrata Muni" },
   { "id": "shikshashtaka",             "title": "Śrī Śrī Śikṣāṣṭaka",             "composer": "Śrī Caitanya Mahāprabhu" },
   { "id": "jaya-radhe-jaya-krsna-jaya-vrndavana", "title": "Jaya Rādhe Jaya Kṛṣṇa Jaya Vṛndāvana", "composer": "Kṛṣṇa Dāsa" },
-  { "id": "upadesamrta",                "title": "Śrī Upadeśāmṛta (Nectar of Instruction)", "composer": "Śrīla Rūpa Gosvāmī" }
+  { "id": "upadesamrta",                "title": "Śrī Upadeśāmṛta (Nectar of Instruction)", "composer": "Śrīla Rūpa Gosvāmī" },
+  { "id": "jaya-jaya-radhe-jaya-jaya-shyama", "title": "Jaya Jaya Rādhe Jaya Jaya Śyāma", "composer": "Traditional" }
 ]
