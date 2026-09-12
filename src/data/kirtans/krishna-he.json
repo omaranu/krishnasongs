@@ -10,11 +10,29 @@
       "type": "verse",
       "lines": [
         "Krishna! Krishna! Krishna! Krishna!",
-        "Krishna! Krishna! Krishna! he",
+        "Krishna! Krishna! Krishna! he"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
         "Krishna! Krishna! Krishna! Krishna!",
-        "Krishna! Krishna! Krishna! he",
+        "Krishna! Krishna! Krishna! he"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
         "Krishna! Krishna! Krishna! Krishna!",
-        "Krishna! Krishna! raksha mam",
+        "Krishna! Krishna! raksha mam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
         "Krishna! Krishna! Krishna! Krishna!",
         "Krishna! Krishna! pahi mam"
       ],
@@ -25,7 +43,13 @@
       "type": "verse",
       "lines": [
         "Rama! Raghava! Rama! Raghava! Rama!",
-        "Raghava! raksha mam",
+        "Raghava! raksha mam"
+      ]
+    },
+    { "type": "gap" },
+    {
+      "type": "verse",
+      "lines": [
         "Krishna! Kesava! Krishna! Kesava!",
         "Krishna! Kesava! pahi mam"
       ],
