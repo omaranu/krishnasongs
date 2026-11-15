@@ -6,7 +6,14 @@ function track(eventName, params = {}) {
 
 export const Analytics = {
   kirtanSelected: (id, title) => track('kirtan_selected', { kirtan_id: id, kirtan_title: title }),
-  kirtanStarted:  (id, title) => track('kirtan_started',  { kirtan_id: id, kirtan_title: title }),
+  kirtanStarted: (id, title) => {
+    const playedAt = new Date().toISOString();
+    track('kirtan_played', {
+      kirtan_id: id,
+      kirtan_title: title,
+      played_at_utc: playedAt,
+    });
+  },
 
   scrollPlay:  () => track('scroll_play'),
   scrollPause: () => track('scroll_pause'),
