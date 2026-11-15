@@ -266,7 +266,6 @@ function getShareDetails() {
 
   return {
     title: `${currentKirtan.title} | KrishnaSongs`,
-    text: `Join me in singing ${currentKirtan.title} on KrishnaSongs.`,
     url: getKirtanShareUrl(currentKirtan.id),
   };
 }
