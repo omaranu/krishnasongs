@@ -1,8 +1,9 @@
 import kirtansManifest from './data/kirtans.json';
 import { state } from './state.js';
 import { kirtanSelectBtn, kirtanSelectText, kirtanDropdown, kirtanSearch, kirtanOptions, beginBtn } from './dom.js';
-import { enterDisplayMode } from './display.js';
+import { enterDisplayMode, exitDisplayMode } from './display.js';
 import { Analytics } from './analytics.js';
+import { getKirtanIdFromUrl } from './routes.js';
 
 const kirtan_modules = import.meta.glob('./data/kirtans/*.json');
 
@@ -40,19 +41,36 @@ export function initHome() {
     if (e.key === 'Escape') closeDropdown();
   });
 
-  beginBtn.addEventListener('click', async () => {
+  beginBtn.addEventListener('click', () => {
     if (!selectedKirtan) return;
-    const id = selectedKirtan.id;
-    const loader = kirtan_modules[`./data/kirtans/${id}.json`];
-    if (!loader) return;
-    Analytics.kirtanStarted(id, selectedKirtan.title);
-    try {
-      const mod = await loader();
-      enterDisplayMode(mod.default);
-    } catch (e) {
-      console.error('Failed to load kirtan:', id, e);
-    }
+    openKirtan(selectedKirtan.id);
   });
+
+  const requestedKirtan = getKirtanIdFromUrl();
+  if (requestedKirtan) openKirtan(requestedKirtan, { updateUrl: false });
+
+  window.addEventListener('popstate', () => {
+    const id = getKirtanIdFromUrl();
+    if (id) openKirtan(id, { updateUrl: false });
+    else exitDisplayMode({ updateUrl: false });
+  });
+}
+
+export async function openKirtan(id, { updateUrl = true } = {}) {
+  const meta = kirtansManifest.find(kirtan => kirtan.id === id);
+  const loader = kirtan_modules[`./data/kirtans/${id}.json`];
+  if (!meta || !loader) return false;
+
+  selectKirtan(meta);
+  Analytics.kirtanStarted(id, meta.title);
+  try {
+    const mod = await loader();
+    enterDisplayMode(mod.default, { updateUrl });
+    return true;
+  } catch (e) {
+    console.error('Failed to load kirtan:', id, e);
+    return false;
+  }
 }
 
 function openDropdown() {

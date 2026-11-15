@@ -44,6 +44,7 @@ function scrollStep(timestamp) {
 export function onManualScroll() {
   if (!state.isPlaying) {
     state.scrollPos = scrollContainer.scrollTop;
+    scrollContainer.dispatchEvent(new Event('manualscroll'));
     return;
   }
   const newPos = scrollContainer.scrollTop;

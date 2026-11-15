@@ -10,7 +10,9 @@ import {
   btnFontDecrease, btnFontIncrease,
   lyricContent,
   btnFullscreen, iconExpand, iconCompress,
+  btnShare, btnMore,
 } from './dom.js';
+import { getKirtanShareUrl } from './routes.js';
 
 const FONT_MIN   = 0.75;
 const FONT_MAX   = 1.5;
@@ -70,12 +72,22 @@ function updateFullscreenIcon() {
 }
 
 export function initFullscreen() {
-  btnFullscreen.addEventListener('click', () => {
+  const supported = document.fullscreenEnabled
+    && typeof document.documentElement.requestFullscreen === 'function';
+  btnFullscreen.classList.toggle('hidden', !supported);
+  if (!supported) return;
+
+  btnFullscreen.addEventListener('click', async () => {
     if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
-      Analytics.fullscreenToggled(true);
+      try {
+        await document.documentElement.requestFullscreen();
+        Analytics.fullscreenToggled(true);
+      } catch {
+        // Some mobile browsers expose the API but reject a fullscreen request.
+        btnFullscreen.classList.add('hidden');
+      }
     } else {
-      document.exitFullscreen();
+      await document.exitFullscreen();
       Analytics.fullscreenToggled(false);
     }
   });
@@ -93,6 +105,9 @@ export function initControlBarHide() {
   document.addEventListener('touchstart', () => {
     if (displayScreen.classList.contains('active')) showControlBar();
   }, { passive: true });
+  scrollContainer.addEventListener('manualscroll', () => {
+    if (displayScreen.classList.contains('active')) showControlBar();
+  });
 }
 
 export function initControls(onExit) {
@@ -110,6 +125,18 @@ export function initControls(onExit) {
   });
 
   btnHome.addEventListener('click', () => { Analytics.exitToHome(); onExit(); });
+
+  btnShare.addEventListener('click', async () => {
+    const didShare = await shareCurrentKirtan();
+    if (didShare) Analytics.kirtanShared();
+  });
+
+  btnMore.addEventListener('click', () => {
+    const expanded = controlBar.classList.toggle('mobile-expanded');
+    btnMore.setAttribute('aria-expanded', String(expanded));
+    btnMore.setAttribute('aria-label', expanded ? 'Show fewer controls' : 'Show more controls');
+    resetHideTimer();
+  });
 
   speedBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -139,6 +166,11 @@ export function initControls(onExit) {
     e.stopPropagation();
     const opening = settingsPanel.classList.contains('hidden');
     settingsPanel.classList.toggle('hidden');
+    if (opening) {
+      controlBar.classList.remove('mobile-expanded');
+      btnMore.setAttribute('aria-expanded', 'false');
+      btnMore.setAttribute('aria-label', 'Show more controls');
+    }
     Analytics.settingsToggled(opening);
     resetHideTimer();
   });
@@ -199,8 +231,12 @@ export function initControls(onExit) {
         if (!document.fullscreenElement) onExit();
         break;
       case 'KeyF':
-        if (!document.fullscreenElement) document.documentElement.requestFullscreen();
-        else document.exitFullscreen();
+        if (typeof document.documentElement.requestFullscreen !== 'function') break;
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else {
+          document.exitFullscreen().catch(() => {});
+        }
         break;
       case 'ArrowLeft':
         e.preventDefault();
@@ -222,4 +258,50 @@ export function initControls(onExit) {
         break;
     }
   });
+}
+
+function getShareDetails() {
+  const { currentKirtan } = state;
+  if (!currentKirtan) return null;
+
+  return {
+    title: `${currentKirtan.title} | KrishnaSongs`,
+    text: `Join me in singing ${currentKirtan.title} on KrishnaSongs.`,
+    url: getKirtanShareUrl(currentKirtan.id),
+  };
+}
+
+async function shareCurrentKirtan() {
+  const details = getShareDetails();
+  if (!details) return false;
+
+  if (navigator.share) {
+    try {
+      await navigator.share(details);
+      return true;
+    } catch (error) {
+      // Closing the native share sheet is expected and should not copy unexpectedly.
+      if (error.name === 'AbortError') return false;
+    }
+  }
+
+  return copyText(details.url);
+}
+
+async function copyText(value) {
+  try {
+    await navigator.clipboard.writeText(value);
+    return true;
+  } catch {
+    const input = document.createElement('textarea');
+    input.value = value;
+    input.setAttribute('readonly', '');
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    document.body.appendChild(input);
+    input.select();
+    const copied = document.execCommand('copy');
+    input.remove();
+    return copied;
+  }
 }

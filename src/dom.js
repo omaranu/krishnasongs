@@ -35,3 +35,6 @@ export const btnFontIncrease  = $('btn-font-increase');
 export const btnFullscreen    = $('btn-fullscreen');
 export const iconExpand       = $('icon-expand');
 export const iconCompress     = $('icon-compress');
+export const btnShare         = $('btn-share');
+export const btnMore          = $('btn-more');
+export const keyboardHint     = $('keyboard-hint');

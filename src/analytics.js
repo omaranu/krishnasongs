@@ -23,4 +23,5 @@ export const Analytics = {
   bgToggled:          (enabled) => track('bg_transitions_toggled',{ enabled }),
   fullscreenToggled:  (enabled) => track('fullscreen_toggled',    { enabled }),
   exitToHome:         ()        => track('exit_to_home'),
+  kirtanShared:       ()        => track('kirtan_shared'),
 };

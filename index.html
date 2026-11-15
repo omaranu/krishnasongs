@@ -89,7 +89,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12L12 3l9 9"/><path d="M9 21V12h6v9"/></svg>
       </button>
 
-      <button id="btn-top" class="ctrl-btn ctrl-btn--icon" title="Back to Top">
+      <button id="btn-top" class="ctrl-btn ctrl-btn--icon mobile-hidden" title="Back to Top">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 11l7-7 7 7"/><path d="M5 19l7-7 7 7"/></svg>
       </button>
 
@@ -97,7 +97,7 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6 10.5 12 19 18V6zM5 6v12h2V6H5z"/></svg>
       </button>
 
-      <button id="btn-play" class="ctrl-btn ctrl-btn--play" title="Play / Pause">
+      <button id="btn-play" class="ctrl-btn ctrl-btn--play mobile-hidden" title="Play / Pause">
         <svg id="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
         <svg id="icon-pause" viewBox="0 0 24 24" fill="currentColor" class="hidden"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
       </button>
@@ -106,7 +106,7 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 18 13.5 12 5 6v12zm9-12v12h2V6h-2z"/></svg>
       </button>
 
-      <div class="speed-group">
+      <div class="speed-group mobile-hidden">
         <button class="speed-btn" data-speed="slow">Slow</button>
         <button class="speed-btn active" data-speed="default">Default</button>
         <button class="speed-btn" data-speed="fast">Fast</button>
@@ -117,7 +117,7 @@
         <button id="btn-font-increase" class="speed-btn" title="Increase font size">A+</button>
       </div>
 
-      <button id="btn-translation" class="ctrl-btn ctrl-btn--translation" title="Toggle Translation">
+      <button id="btn-translation" class="ctrl-btn ctrl-btn--translation mobile-extra" title="Toggle Translation">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M3 5h9M7 3v2"/>
           <path d="M5 8c1 2.5 3 4 5.5 5"/>
@@ -128,11 +128,11 @@
         <span>Translation</span>
       </button>
 
-      <button id="btn-settings" class="ctrl-btn ctrl-btn--icon" title="Settings">
+      <button id="btn-settings" class="ctrl-btn ctrl-btn--icon mobile-extra" title="Settings">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       </button>
 
-      <button id="btn-fullscreen" class="ctrl-btn ctrl-btn--icon" title="Fullscreen (F)">
+      <button id="btn-fullscreen" class="ctrl-btn ctrl-btn--icon mobile-extra" title="Fullscreen (F)">
         <svg id="icon-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
         </svg>
@@ -140,7 +140,16 @@
           <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/>
         </svg>
       </button>
+
+      <button id="btn-more" class="ctrl-btn ctrl-btn--icon ctrl-btn--more" title="More controls" aria-expanded="false" aria-label="Show more controls">
+        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
+      </button>
     </div>
+
+    <button id="btn-share" class="ctrl-btn ctrl-btn--share display-share" title="Share this kirtan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.5-4.5M8.2 13.2l7.5 4.5"/></svg>
+      <span>Share</span>
+    </button>
 
     <!-- Settings panel -->
     <div id="settings-panel" class="settings-panel hidden">
@@ -165,6 +174,15 @@
 
     <!-- Kirtan title overlay -->
     <div id="kirtan-title-overlay" class="kirtan-title-overlay"></div>
+
+    <!-- Keyboard navigation hint for projector / desktop use -->
+    <div id="keyboard-hint" class="keyboard-hint hidden" role="status">
+      <div class="keyboard-hint__main">
+        <span class="keyboard-hint__keys"><kbd>←</kbd><kbd>→</kbd></span>
+        <span class="keyboard-hint__message">Use the arrow keys to move between verses</span>
+      </div>
+      <span class="keyboard-hint__dismiss">Press any key to dismiss</span>
+    </div>
 
   </div>
 
