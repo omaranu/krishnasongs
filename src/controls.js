@@ -53,6 +53,7 @@ import { setupVerseImageObserver, stopRangeCycle } from './observer.js';
 
 export function showControlBar() {
   controlBar.classList.add('visible');
+  btnShare.classList.add('visible');
   resetHideTimer();
 }
 
@@ -61,6 +62,7 @@ export function resetHideTimer() {
   state.hideTimer = setTimeout(() => {
     if (settingsPanel.classList.contains('hidden')) {
       controlBar.classList.remove('visible');
+      btnShare.classList.remove('visible');
     }
   }, 3500);
 }
